@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 Python script for batch geocoding of addresses using the Google Geocoding API.
@@ -39,7 +39,7 @@ API_KEY = 'AIzaSyB3KKQq5eMAElwnnyymKxlfBOFCCfeVcB0'
 # Backoff time sets how many minutes to wait between google pings when your API limit is hit
 BACKOFF_TIME = 30
 # Set your output file name here.
-output_filename = 'out30071.csv'
+output_filename = 'out.csv'
 # Set your input file here
 input_filename = "cpost_NoCoord_Geocode2.csv"
 # Specify the column name in your input data that contains addresses here

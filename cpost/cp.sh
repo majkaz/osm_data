@@ -1,4 +1,4 @@
-#!/bin/bash
+﻿#!/bin/bash
 # 
 
 # potřebuje datamash ve zdrojovém adresáři: check
@@ -69,20 +69,21 @@ echo
 join -t$'\t' -v 2 cpost_crude_dedup.txt cp_ref_ids.txt > ids_zruseno_$cp_date.txt
 if [ -s ids_zruseno_$cp_date.txt ];
 then 
-	echo "Vypadá to, že některé schránky byly zrušené."
-	echo "Jejich seznam je uveden v souboru ${b}ids_zruseno_$cp_date.txt${n}"
+    echo "Vypadá to, že některé schránky byly zrušené."
+    echo "Jejich seznam je uveden v souboru ${b}ids_zruseno_$cp_date.txt${n}"
+    sed -i 's/\t/\tschránka zrušená? naposledy viděno v exportu ČP '/' ids_zruseno_$cp_date.txt
 else
-	rm ids_zruseno_$cp_date.txt
+    rm ids_zruseno_$cp_date.txt
 fi
 
 # přibyly schránky?
-join -t$'\t' -v 1 cpost_crude_dedup.txt cp_ref_ids.txt | cut -f1 | sed "s/$/\t$cp_date/" > ids_nove_$cp_date.txt
+join -t$'\t' -v 1 cpost_crude_dedup.txt cp_ref_ids.txt | cut -f1 | sed "s/$/\tcp\:$cp_date/" > ids_nove_$cp_date.txt
 if [ -s ids_nove_$cp_date.txt ];
 then 
-	echo "Vypadá to, že některé schránky přibyly."
-	echo "Jejich seznam je uveden v souboru ${b}ids_nove_$cp_date.txt${n}"
+    echo "Vypadá to, že některé schránky přibyly."
+    echo "Jejich seznam je uveden v souboru ${b}ids_nove_$cp_date.txt${n}"
 else
-	rm ids_nove_$cp_date.txt
+    rm ids_nove_$cp_date.txt
 fi
 
 # přibyly dny výběru, které nejsou v konverzní tabulce?
