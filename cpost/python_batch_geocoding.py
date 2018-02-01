@@ -41,7 +41,7 @@ BACKOFF_TIME = 30
 # Set your output file name here.
 output_filename = 'out30071.csv'
 # Set your input file here
-input_filename = "cpost_NC.csv"
+input_filename = "cpost_NoCoord_Geocode2.csv"
 # Specify the column name in your input data that contains addresses here
 address_column_name = "Address"
 # Return Full Google Results? If True, full JSON results from Google are included in output

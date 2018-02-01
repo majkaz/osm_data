@@ -55,6 +55,7 @@ echo
 # nové/změněné koordináty ke zkonvertování
 ./datamash rmdup 1 < cpost_ps.csv |	# deduplikace->ref pro zrychlení
     dos2unix |	# datamash win64 -> out \r\n
+    sort |	# použije se později
     tee cpost_crude_dedup.txt |	# vytvoření souboru pro další zpracování
     cut -f1,6-7 |	# jen ref, souřadnice x a y
     awk '{if($2) print }' |	# má souřadnice?
@@ -63,6 +64,26 @@ echo
     sed 's/\./,/g;s/$/\t0/' |	# přeformátování pro EasyTransform
     iconv -f utf-8 -t cp1250 | unix2dos |	# konverze zpět pro EasyTransform
     tr '\t' ' ' > cp_konvertovat.txt	# vytvoření souboru pro konverzi
+
+# zrušené schránky?
+join -t$'\t' -v 2 cpost_crude_dedup.txt cp_ref_ids.txt > ids_zruseno_$cp_date.txt
+if [ -s ids_zruseno_$cp_date.txt ];
+then 
+	echo "Vypadá to, že některé schránky byly zrušené."
+	echo "Jejich seznam je uveden v souboru ${b}ids_zruseno_$cp_date.txt${n}"
+else
+	rm ids_zruseno_$cp_date.txt
+fi
+
+# přibyly schránky?
+join -t$'\t' -v 1 cpost_crude_dedup.txt cp_ref_ids.txt | cut -f1 | sed "s/$/\t$cp_date/" > ids_nove_$cp_date.txt
+if [ -s ids_nove_$cp_date.txt ];
+then 
+	echo "Vypadá to, že některé schránky přibyly."
+	echo "Jejich seznam je uveden v souboru ${b}ids_nove_$cp_date.txt${n}"
+else
+	rm ids_nove_$cp_date.txt
+fi
 
 # přibyly dny výběru, které nejsou v konverzní tabulce?
 if [ -s cp_konvertovat.txt ]
@@ -136,7 +157,7 @@ echo "Address" > cpost_NoCoord_Geocode.csv	# hlavička csv
     tee cpost_Adr.txt |	# ref + adresy
     join -t$'\t' -v 2 cp_ref_coord_history.txt - |	# rozdíly oproti historii souřadnic
     tee cpost_NoCoord.txt |	# ref + adresa pro geokodovani
-    cut -f2 |	# jen adres. pole
+    cut -f2- | sed 's/\t/, /' |	# jen adres. pole, spojit
     sed "s/\(.*\)/\"\1\"/" >> cpost_NoCoord_Geocode.csv	# quote
 
 
@@ -170,8 +191,8 @@ fi
 
 
 # vyčištění nepotřebných souborů
-rm cpost_crude_dedup.txt
-rm cpost_ps.csv
+# rm cpost_crude_dedup.txt
+# rm cpost_ps.csv
 
 # ... další nedoděláno, po běhu programu zbývají další soubory pro pokračování příště ...
 #

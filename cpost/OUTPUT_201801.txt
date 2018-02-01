@@ -1318,7 +1318,7 @@ ref	latitude	longitude	note	amenity	operator	source
 19007:899	48,99689004	16,84801990	Urxova 10, Praha 8	Mo-Fr 16:00	post_box	Česká pošta s.p.	cp:201801
 19007:900	48,99502924	16,86635673	Sokolovská 578(metro Inval.),Praha 8	Mo-Fr 16:00	post_box	Česká pošta s.p.	cp:201801
 19007:901	48,99531991	16,87656483	Hotel Olympik, Praha 8	Mo-Fr 16:00	post_box	Česká pošta s.p.	cp:201801
-19007:902	48,99676336	16,88315488	Pod plynojemem x U Sluncové, Praha 8	Mo-Fr 16:00	post_box	Česká pošta s.p.	cp:201801
+19007:902	48,99676336	16,88315488	Pod plynojemem  xU Sluncové, Praha 8	Mo-Fr 16:00	post_box	Česká pošta s.p.	cp:201801
 19007:903	48,96630136	16,86224210	náměstí Václava Holého 8, 180 00 Praha 8	Mo-Fr 16:00	post_box	Česká pošta s.p.	cp:201801
 19007:904	49,01784731	16,89385998	Pivovarnická 5, Praha 8	Mo-Fr 16:00	post_box	Česká pošta s.p.	cp:201801
 19007:905	48,97073040	16,80762698	Klapkova 16/10(Stírka), Praha 8	Mo-Fr 16:00	post_box	Česká pošta s.p.	cp:201801
@@ -2294,7 +2294,7 @@ ref	latitude	longitude	note	amenity	operator	source
 26107:25	50,00534930	16,56237025	U Slovanky 736 Dobříš	Mo-Fr 09:30	post_box	Česká pošta s.p.	cp:201801
 26107:250	50,04010916	16,62552459	Bohostice - prodejna č.p.55	Mo-Fr 09:00	post_box	Česká pošta s.p.	cp:201801
 26107:251	50,04468367	16,64510231	Milín - prodejna u ZŠ č.p.246	Mo-Fr 09:00	post_box	Česká pošta s.p.	cp:201801
-26107:252	50,00720388	16,63180409	Kamenná u zvoničky č.p.13;Příbram I;Příbram;Příbram	Mo-Fr 09:15	post_box	Česká pošta s.p.	cp:201801
+26107:252	50,00720388	16,63180409	Kamenná u zvoničky č.p.13, Příbram I, Příbram	Mo-Fr 09:15	post_box	Česká pošta s.p.	cp:201801
 26107:253	50,01093503	16,62204166	Cetyně - zastávka č.p.7	Mo-Fr 09:00	post_box	Česká pošta s.p.	cp:201801
 26107:254	50,01125500	16,60485062	Zbenice - prodejna č.p.49	Mo-Fr 09:00	post_box	Česká pošta s.p.	cp:201801
 26107:255	50,00690389	16,58982919	Mýšlovice - náves č.p.11	Mo-Fr 09:00	post_box	Česká pošta s.p.	cp:201801
@@ -4735,7 +4735,7 @@ ref	latitude	longitude	note	amenity	operator	source
 33907:227	50,30488188	13,27472570	Chanovice - pošta	Mo-Fr 08:00	post_box	Česká pošta s.p.	cp:201801
 33907:228	50,29216370	13,23941870	Pačejov - pošta	Mo-Fr 08:00	post_box	Česká pošta s.p.	cp:201801
 33907:229	50,27955860	13,22666398	Myslív - pošta	Mo-Fr 08:00	post_box	Česká pošta s.p.	cp:201801
-33907:23	50,31110239	13,31054379	Klatovy-firma Klatex Nádražní 192/III	Mo-Fr 15:00	post_box	Česká pošta s.p.	cp:201801
+33907:23	50,31110239	13,31054379	Klatovy-firma Klate xNádražní 192/III	Mo-Fr 15:00	post_box	Česká pošta s.p.	cp:201801
 33907:231	50,38299735	13,26548972	Nalžovské Hory - pošta	Mo-Fr 08:00	post_box	Česká pošta s.p.	cp:201801
 33907:233	50,38236390	13,25420062	Horažďovice- budova ČD Tyršova 427	Mo-Fr 11:00	post_box	Česká pošta s.p.	cp:201801
 33907:234	50,37687756	13,26729883	Horažďovice-budova LDN Blatenská 314	Mo-Fr 11:00	post_box	Česká pošta s.p.	cp:201801
@@ -7881,7 +7881,7 @@ ref	latitude	longitude	note	amenity	operator	source
 39707:80	50,51229532	13,69941345	Žbonín	Mo-Fr 07:45	post_box	Česká pošta s.p.	cp:201801
 39707:81	50,54120671	13,71170280	Štědronín	Mo-Fr 10:00	post_box	Česká pošta s.p.	cp:201801
 39707:82	50,54243079	13,70026505	Štědronín - Jitex, č.p. 5	Mo-Fr 10:00	post_box	Česká pošta s.p.	cp:201801
-39707:83	50,44972618	13,59801842	Štědronín - Jitex č.p. 22	Mo-Fr 10:00	post_box	Česká pošta s.p.	cp:201801
+39707:83	50,44972618	13,59801842	Štědronín - Jite xč.p. 22	Mo-Fr 10:00	post_box	Česká pošta s.p.	cp:201801
 39707:85	50,49280182	13,75188077	Třešně	Mo-Fr 08:00	post_box	Česká pošta s.p.	cp:201801
 39707:86	50,52455466	13,62684029	Jamenské Pazdeny	Mo-Fr 08:00	post_box	Česká pošta s.p.	cp:201801
 39707:87	50,60891034	13,59167594	Temešvár	Mo-Fr 08:30	post_box	Česká pošta s.p.	cp:201801
@@ -12231,7 +12231,7 @@ ref	latitude	longitude	note	amenity	operator	source
 56707:581	49,49317973	17,42673548	Vrážné ČSAD u č.p. 6	Mo-Fr 08:00	post_box	Česká pošta s.p.	cp:201801
 56707:582	49,47928758	17,45574806	Bezděčí Jednota č. 38, Jevíčko	Mo-Fr 08:00	post_box	Česká pošta s.p.	cp:201801
 56707:583	49,49116802	17,39666598	Lazy, autoopravna č. 62	Mo-Fr 08:00	post_box	Česká pošta s.p.	cp:201801
-56707:584	49,50378150	17,46829428	Giratex s r.o.,Nádražní 141, Chornice	Mo-Fr 08:00	post_box	Česká pošta s.p.	cp:201801
+56707:584	49,50378150	17,46829428	Girate xs r.o.,Nádražní 141, Chornice	Mo-Fr 08:00	post_box	Česká pošta s.p.	cp:201801
 56707:585	49,48258897	17,50039961	ČD Chornice, č.p. 144	Mo-Fr 08:00	post_box	Česká pošta s.p.	cp:201801
 56707:586	49,51042794	17,47906496	pošta Březina u M. Třebové	Mo-Fr 08:00	post_box	Česká pošta s.p.	cp:201801
 56707:587	49,50393104	17,45122516	Brněnská 188, Jevíčko	Mo-Fr 08:00	post_box	Česká pošta s.p.	cp:201801
@@ -13792,7 +13792,7 @@ ref	latitude	longitude	note	amenity	operator	source
 60011:103	49,44758099	14,49242584	Kobylnice - obchod	Mo-Fr 11:00	post_box	Česká pošta s.p.	cp:201801
 60011:104	49,46342018	14,50869723	Kobylnice 42	Mo-Fr 10:30	post_box	Česká pošta s.p.	cp:201801
 60011:105	49,51235324	14,52557215	Švehlova, Šlapanice	Mo-Fr 10:30	post_box	Česká pošta s.p.	cp:201801
-60011:106	49,53229276	14,52004561	park u křižovatky Brněnská x Čechova	Mo-Fr 10:30	post_box	Česká pošta s.p.	cp:201801
+60011:106	49,53229276	14,52004561	park u křižovatky Brněnská  xČechova	Mo-Fr 10:30	post_box	Česká pošta s.p.	cp:201801
 60011:107	49,51307124	14,54011520	u bytovky	Mo-Fr 09:30	post_box	Česká pošta s.p.	cp:201801
 60011:108	49,52545628	14,54586183	ul. Znojemská 700, Pohořelice	Mo-Fr 08:30	post_box	Česká pošta s.p.	cp:201801
 60011:11	49,51152426	14,56816419	Žatčany 283,samoobsluha	Mo-Fr 10:00	post_box	Česká pošta s.p.	cp:201801
@@ -15714,7 +15714,7 @@ ref	latitude	longitude	note	amenity	operator	source
 70071:262	49,23089255	16,99794041	Osada míru 128 - obchod, Dolní Benešov	Mo-Fr 11:00	post_box	Česká pošta s.p.	cp:201801
 70071:263	49,24317348	17,01578722	Opavská,na stojanu u kostela před čp. 35,DB-Zábřeh	Mo-Fr 11:15	post_box	Česká pošta s.p.	cp:201801
 70071:264	49,30232713	16,98254746	Prodejna Hruška, Opavská 519, Dolní Benešov	Mo-Fr 10:00	post_box	Česká pošta s.p.	cp:201801
-70071:27	49,27482527	16,99420987	Tyršova 1250/6 x Zámecká-Imperial,Moravská Ostrava	Mo-Fr 16:15	post_box	Česká pošta s.p.	cp:201801
+70071:27	49,27482527	16,99420987	Tyršova 1250/6  xZámecká-Imperial,Moravská Ostrava	Mo-Fr 16:15	post_box	Česká pošta s.p.	cp:201801
 70071:28	49,29785951	16,97218834	Nádražní 1448/8 - u ČSOB, Moravská Ostrava	Mo-Fr 16:15	post_box	Česká pošta s.p.	cp:201801
 70071:29	49,30818195	16,96712865	Nádražní 142/20-CK Kovotour, Moravská Ostrava	Mo-Fr 16:30	post_box	Česká pošta s.p.	cp:201801
 70071:3	49,30253027	16,95391059	Slívova 881/32, Slezská Ostrava	Mo-Fr 11:00	post_box	Česká pošta s.p.	cp:201801
@@ -15773,10 +15773,10 @@ ref	latitude	longitude	note	amenity	operator	source
 70071:407	49,12150831	16,94767442	č.p. 559 (na stojanu), Doubrava	Mo-Fr 10:00	post_box	Česká pošta s.p.	cp:201801
 70071:408	49,14755957	16,99384511	Dětmarovice č.44 - nádraží ČD (uvnitř objektu)	Mo-Fr 10:00	post_box	Česká pošta s.p.	cp:201801
 70071:409	49,18852126	17,01352796	Dětmarovice č.720-Zdrav.středisko (stojan před ZS)	Mo-Fr 10:00	post_box	Česká pošta s.p.	cp:201801
-70071:41	49,17239412	17,02992857	Korunní x 28.října 1142/168 -Stavoprojekt,Mar.Hory	Mo-Fr 16:15	post_box	Česká pošta s.p.	cp:201801
+70071:41	49,17239412	17,02992857	Korunní  x28.října 1142/168 -Stavoprojekt,Mar.Hory	Mo-Fr 16:15	post_box	Česká pošta s.p.	cp:201801
 70071:410	49,14640216	16,96902120	Dětmarovice č.1072-LUKE (stojan před obchodem)	Mo-Fr 09:30	post_box	Česká pošta s.p.	cp:201801
 70071:412	49,11876531	16,98463606	Dětmarovice č.1153-Hospůdka "Na Růžku" (stojan)	Mo-Fr 10:00	post_box	Česká pošta s.p.	cp:201801
-70071:42	49,14158512	17,01915793	Korunní x Stojanovo nám.1072/1-výtv.centr,Mar.Hory	Mo-Fr 16:15	post_box	Česká pošta s.p.	cp:201801
+70071:42	49,14158512	17,01915793	Korunní  xStojanovo nám.1072/1-výtv.centr,Mar.Hory	Mo-Fr 16:15	post_box	Česká pošta s.p.	cp:201801
 70071:44	49,13654581	17,04816143	Ahepjukova 2810/1 (stojan), Moravská Ostrava	Mo-Fr 16:15	post_box	Česká pošta s.p.	cp:201801
 70071:45	49,15496338	16,99731706	Hornopolní 1075/57 (stojan)  - Pivovar, M.Ostrava	Mo-Fr 16:00	post_box	Česká pošta s.p.	cp:201801
 70071:46	49,14798494	17,00193019	Rybářská 1223/13-Domov pro seniory, Mariánské Hory	Mo-Fr 16:30	post_box	Česká pošta s.p.	cp:201801
@@ -15791,13 +15791,13 @@ ref	latitude	longitude	note	amenity	operator	source
 70071:507	49,11200354	17,13493292	Rychvaldská , na čp.1166,Potraviny, Dolní Lutyně	Mo-Fr 10:00	post_box	Česká pošta s.p.	cp:201801
 70071:508	49,12912362	17,12581403	Hlavní 202, Věřňovice, Dolní Lutyně	Mo-Fr 10:00	post_box	Česká pošta s.p.	cp:201801
 70071:51	49,15828538	16,88319191	Pošta Ostrava 9 (stojan před vchodem)	Mo-Fr 16:30	post_box	Česká pošta s.p.	cp:201801
-70071:52	49,14419845	16,87662087	Výstavní 2305/43 x Gajdošova, Moravská Ostrava	Mo-Fr 17:00	post_box	Česká pošta s.p.	cp:201801
+70071:52	49,14419845	16,87662087	Výstavní 2305/43  xGajdošova, Moravská Ostrava	Mo-Fr 17:00	post_box	Česká pošta s.p.	cp:201801
 70071:53	49,16571840	16,92101290	OC Nová Karolína,Jantarová 3344/4(1.podz.podl.)MO.	Mo-Fr 17:15	post_box	Česká pošta s.p.	cp:201801
 70071:54	49,13978158	16,91942001	Hornická 3044/49 - Potraviny Hruška, Mor.Ostrava	Mo-Fr 17:00	post_box	Česká pošta s.p.	cp:201801
-70071:56	49,12981101	16,85346427	Kaufland x Takko, Vítkovická 3278/3, Mor. Ostrava	Mo-Fr 17:00	post_box	Česká pošta s.p.	cp:201801
+70071:56	49,12981101	16,85346427	Kaufland  xTakko, Vítkovická 3278/3, Mor. Ostrava	Mo-Fr 17:00	post_box	Česká pošta s.p.	cp:201801
 70071:57	49,12988633	16,85634173	Prokešovo nám.1802/9 - Věd.knihovna, Mor.Ostrava	Mo-Fr 17:15	post_box	Česká pošta s.p.	cp:201801
 70071:58	49,14208921	16,91239822	Pošta Ostrava 40, Zborovská 2355/31, Mor. Ostrava	Mo-Fr 17:00	post_box	Česká pošta s.p.	cp:201801
-70071:59	49,11993736	16,91250138	Náměstí Svat.Čecha x Nádražní 512/172, Přívoz	Mo-Fr 17:30	post_box	Česká pošta s.p.	cp:201801
+70071:59	49,11993736	16,91250138	Náměstí Svat.Čecha  xNádražní 512/172, Přívoz	Mo-Fr 17:30	post_box	Česká pošta s.p.	cp:201801
 70071:6	49,09255029	16,88514367	Antošovická 57/369 - Budoucnost, Antošovice	Mo-Fr 10:00	post_box	Česká pošta s.p.	cp:201801
 70071:60	49,17935768	16,82196707	Pošta Ostrava 2 (stojan)	Mo-Fr 17:30	post_box	Česká pošta s.p.	cp:201801
 70071:601	49,17787685	16,80417308	Supermarket CENTRAL, Mírové nám.21/20,Hlučín	Mo-Fr 16:05	post_box	Česká pošta s.p.	cp:201801
@@ -15889,7 +15889,7 @@ ref	latitude	longitude	note	amenity	operator	source
 72572:172	49,20263903	17,66854226	Osvoboditelů 1018, Nový Bohumín	Mo-Fr 16:30	post_box	Česká pošta s.p.	cp:201801
 72572:173	49,23836697	17,66004374	Okružní 716 (na stojanu), Nový Bohumín	Mo-Fr 16:40	post_box	Česká pošta s.p.	cp:201801
 72572:174	49,23983996	17,65287315	Bezručova 542-samoobsluha, Nový Bohumín	Mo-Fr 16:45	post_box	Česká pošta s.p.	cp:201801
-72572:175	49,18647272	17,66244915	9. května x Štefánikova 329, Nový Bohumín	Mo-Fr 16:50	post_box	Česká pošta s.p.	cp:201801
+72572:175	49,18647272	17,66244915	9. května  xŠtefánikova 329, Nový Bohumín	Mo-Fr 16:50	post_box	Česká pošta s.p.	cp:201801
 72572:176	49,18831712	17,66944571	Nám.TGM 936 - dům ŽDB, Nový Bohumín	Mo-Fr 16:55	post_box	Česká pošta s.p.	cp:201801
 72572:177	49,18596291	17,65973582	Pošta Ostrava 26 (stojan)	Mo-Fr 17:00	post_box	Česká pošta s.p.	cp:201801
 72572:178	49,20176621	17,65567129	Pošta Ostrava 27	Mo-Fr 15:30	post_box	Česká pošta s.p.	cp:201801
@@ -16051,14 +16051,14 @@ ref	latitude	longitude	note	amenity	operator	source
 72572:609	48,81321612	16,00550960	Nad Porubkou 1084/30,Svinov (stojan před objektem)	Mo-Fr 10:00	post_box	Česká pošta s.p.	cp:201801
 72572:62	48,81909717	16,11022861	Dr.Martínka 1491/7-Poliklinika,Hrabůvka (stojan)	Mo-Fr 15:00	post_box	Česká pošta s.p.	cp:201801
 72572:63	48,84672860	16,11708630	Edisonova 792/82-bar Toman (za ÚMOB Jih),Hrabůvka	Mo-Fr 15:00	post_box	Česká pošta s.p.	cp:201801
-72572:64	48,84652339	16,11449513	Jubilejní 531/77 x Dvouletky, Hrabůvka	Mo-Fr 15:15	post_box	Česká pošta s.p.	cp:201801
+72572:64	48,84652339	16,11449513	Jubilejní 531/77  xDvouletky, Hrabůvka	Mo-Fr 15:15	post_box	Česká pošta s.p.	cp:201801
 72572:65	48,85617016	15,98815488	Závodní 330/49a,Hrabůvka (na zídce v podloubí)	Mo-Fr 15:15	post_box	Česká pošta s.p.	cp:201801
 72572:66	48,87117135	15,95582070	nám.Gen.Svobody 1464/20-lékárna, Zábřeh (stojan)	Mo-Fr 15:15	post_box	Česká pošta s.p.	cp:201801
 72572:67	48,85019982	15,94004354	Středulinského 966/26 (z boku), Vítkovice	Mo-Fr 15:15	post_box	Česká pošta s.p.	cp:201801
 72572:68	48,86245758	15,91159777	U Nádraží 27/1-budova vlak.nádraží,Vítkovice	Mo-Fr 15:30	post_box	Česká pošta s.p.	cp:201801
 72572:69	48,82139881	16,01577820	Jeremenkova 954/5, Vítkovice (stojan)	Mo-Fr 15:30	post_box	Česká pošta s.p.	cp:201801
 72572:7	48,87617451	16,07723891	Potrav.Matušínský,Proskovická 144 (stojan),Krmelín	Mo-Fr 09:00	post_box	Česká pošta s.p.	cp:201801
-72572:71	48,86755520	16,09485320	Dolní x Hulvácká 2081/2 - na rohu, Zábřeh	Mo-Fr 15:45	post_box	Česká pošta s.p.	cp:201801
+72572:71	48,86755520	16,09485320	Dolní  xHulvácká 2081/2 - na rohu, Zábřeh	Mo-Fr 15:45	post_box	Česká pošta s.p.	cp:201801
 72572:74	48,78395274	16,09499688	OD Kaufland,Výškovická 3086/44, Zábřeh (stojan)	Mo-Fr 16:00	post_box	Česká pošta s.p.	cp:201801
 72572:75	48,77320572	16,13012343	Výškovická 165/126 - lékaři, Zábřeh	Mo-Fr 16:00	post_box	Česká pošta s.p.	cp:201801
 72572:76	48,79720329	15,98710768	Racek-nák.střed.,Předškolní 680/4-Albert,Výškovice	Mo-Fr 16:15	post_box	Česká pošta s.p.	cp:201801
@@ -17402,7 +17402,7 @@ ref	latitude	longitude	note	amenity	operator	source
 77072:36	49,94648510	15,58127555	Olomouc, Nové Sady, Fischerova 708/6 (stojan)	Mo-Fr 17:30	post_box	Česká pošta s.p.	cp:201801
 77072:4	50,02984312	15,61643899	Olomouc, Hodolany, tř.Kosmonautů 113/27, ALBERT	Mo-Fr 18:20	post_box	Česká pošta s.p.	cp:201801
 77072:40	50,01193136	15,52289073	Olomouc, Povel, Finská 451/4 (stojan)	Mo-Fr 17:50	post_box	Česká pošta s.p.	cp:201801
-77072:401	50,02071484	15,49484906	Litovel, Husova x nám. Př. Otakara 754/12 (stojan)	Mo-Fr 14:10	post_box	Česká pošta s.p.	cp:201801
+77072:401	50,02071484	15,49484906	Litovel, Husova  xnám. Př. Otakara 754/12 (stojan)	Mo-Fr 14:10	post_box	Česká pošta s.p.	cp:201801
 77072:408	49,95745183	15,61445167	Litovel, Novosady 516, obchod	Mo-Fr 14:00	post_box	Česká pošta s.p.	cp:201801
 77072:409	50,00849146	15,64456425	Litovel, Vítězná 176/29a, pošta (stojan)	Mo-Fr 17:50	post_box	Česká pošta s.p.	cp:201801
 77072:41	49,97466734	15,59530736	Olomouc,Povel,Janského 469/8,pošta Olc 12 (stojan)	Mo-Fr 17:40	post_box	Česká pošta s.p.	cp:201801
