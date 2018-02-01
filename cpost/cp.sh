@@ -132,6 +132,7 @@ echo "Address" > cpost_NoCoord_Geocode.csv	# hlavička csv
     dos2unix | 
     awk -F$'\t' '{ if($2) {print $1"\t"$2"\t"$3";"$4";"$5";"$6 } else {print $1"\t"$3"\t"$4";"$5";"$6 }}' |	# pole 2 nebo 3
     sed 's/\;\+/\;/g;s/\;$//' |	# další pole jako poznámka 
+    sed -r 's/ /xxx/g; s/(\w+)\;+\1/\1/g ; s/xxx/ /g; s/\;/, /g' |	# vymazat opakovaná slova
     tee cpost_Adr.txt |	# ref + adresy
     join -t$'\t' -v 2 cp_ref_coord_history.txt - |	# rozdíly oproti historii souřadnic
     tee cpost_NoCoord.txt |	# ref + adresa pro geokodovani
