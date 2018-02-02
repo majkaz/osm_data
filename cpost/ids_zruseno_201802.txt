@@ -1,20 +1,20 @@
-28520:70	201801
-29407:304	201801
-29407:328	201801
-30071:56	201801
-30071:64	201801
-30071:8	201801
-37271:739	201801
-43007:135	201801
-43007:18	201801
-43007:27	201801
-43007:34	201801
-43007:36	201801
-43007:45	201801
-46307:251	201801
-50770:303	201801
-56707:102	201801
-70071:15	201801
-70071:5	201801
-72572:605	201801
-74207:103	201801
+28520:70	Schránka zrušená?<br>V exportu ČP 201802 chybí.201801
+29407:304	Schránka zrušená?<br>V exportu ČP 201802 chybí.201801
+29407:328	Schránka zrušená?<br>V exportu ČP 201802 chybí.201801
+30071:56	Schránka zrušená?<br>V exportu ČP 201802 chybí.201801
+30071:64	Schránka zrušená?<br>V exportu ČP 201802 chybí.201801
+30071:8	Schránka zrušená?<br>V exportu ČP 201802 chybí.201801
+37271:739	Schránka zrušená?<br>V exportu ČP 201802 chybí.201801
+43007:135	Schránka zrušená?<br>V exportu ČP 201802 chybí.201801
+43007:18	Schránka zrušená?<br>V exportu ČP 201802 chybí.201801
+43007:27	Schránka zrušená?<br>V exportu ČP 201802 chybí.201801
+43007:34	Schránka zrušená?<br>V exportu ČP 201802 chybí.201801
+43007:36	Schránka zrušená?<br>V exportu ČP 201802 chybí.201801
+43007:45	Schránka zrušená?<br>V exportu ČP 201802 chybí.201801
+46307:251	Schránka zrušená?<br>V exportu ČP 201802 chybí.201801
+50770:303	Schránka zrušená?<br>V exportu ČP 201802 chybí.201801
+56707:102	Schránka zrušená?<br>V exportu ČP 201802 chybí.201801
+70071:15	Schránka zrušená?<br>V exportu ČP 201802 chybí.201801
+70071:5	Schránka zrušená?<br>V exportu ČP 201802 chybí.201801
+72572:605	Schránka zrušená?<br>V exportu ČP 201802 chybí.201801
+74207:103	Schránka zrušená?<br>V exportu ČP 201802 chybí.201801
