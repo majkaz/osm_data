@@ -71,7 +71,7 @@ if [ -s ids_zruseno_$cp_date.txt ];
 then 
     echo "Vypadá to, že některé schránky byly zrušené."
     echo "Jejich seznam je uveden v souboru ${b}ids_zruseno_$cp_date.txt${n}"
-    sed -i 's/\t/\tschránka zrušená? naposledy viděno v exportu ČP '/' ids_zruseno_$cp_date.txt
+    sed -i "s/\t/\tSchránka zrušená?<br>V exportu ČP $cp_date chybí./" ids_zruseno_$cp_date.txt
 else
     rm ids_zruseno_$cp_date.txt
 fi

@@ -1,0 +1,95 @@
+10003:269	50.0300518	14.4571304	<b>Thom.nem. uvnitř</b><br>Krč, Praha, Hl. město Praha	Vídeňská 800, Krč, 142 00 Praha-Praha 4<br>hospital,pharmacy,store	post_box	Česká pošta s.p.	cp:201802
+10003:270	50.0300518	14.4571304	<b>Thom.nem. ústav</b><br>Krč, Praha, Hl. město Praha	Vídeňská 800, Krč, 142 00 Praha-Praha 4<br>hospital,pharmacy,store	post_box	Česká pošta s.p.	cp:201802
+10003:37	50.072598	14.54241	<b>Štěrboholy - obchod</b><br>Štěrboholy, Praha, Hl. město Praha	Nákupní 389/3, 102 00 Praha-Štěrboholy<br>shopping_mall	post_box	Česká pošta s.p.	cp:201802
+10003:409	50.04842	14.4680867	<b>V zápolí 987/17, Michle, 14100, Praha</b><br>Zápolí 17	V Zápolí 987/17, 141 00 Praha<br>restaurant	post_box	Česká pošta s.p.	cp:201802
+10003:455	50.0456607	14.5579451	<b>Milánská 311, Horní Měcholupy, 10900, Praha</b><br>Milánská 311	Milánská 311, 109 00 Praha 15<br>school	post_box	Česká pošta s.p.	cp:201802
+11007:247	50.0852033	14.4144276	<b>Ve stojanu před OC Charles Bridge</b><br>Nové Město, Praha, Hl. město Praha	Anenské nám. 203/1, 110 00 Praha 1-Staré Město<br>lodging,	post_box	Česká pošta s.p.	cp:201802
+11007:761	50.1178458	14.4058748	<b>Trojská /ZOO, P 7</b><br>Troja, Praha, Hl. město Praha	U Trojského zámku 3/120, 171 00 Praha-Praha-Troja<br>zoo	post_box	Česká pošta s.p.	cp:201802
+11007:762	50.1178458	14.4058748	<b>Trojská sam. , P 7</b><br>Troja, Praha, Hl. město Praha	U Trojského zámku 3/120, 171 00 Praha-Praha-Troja<br>zoo	post_box	Česká pošta s.p.	cp:201802
+11007:764	50.1178458	14.4058748	<b>Trojská BUS, P 7</b><br>Troja, Praha, Hl. město Praha	U Trojského zámku 3/120, 171 00 Praha-Praha-Troja<br>zoo	post_box	Česká pošta s.p.	cp:201802
+11007:96	50.0714999	14.415082	<b>Podskalská 380/35, Nové Město, 12800, Praha</b><br>Podskalská 380/35	Podskalská 380/35, Nové Město, 128 00 Praha-Praha 2<br>street_address	post_box	Česká pošta s.p.	cp:201802
+17704:300	50.1584492	14.3993508	<b>Muzeum</b><br>Roztoky, Praha-západ	Nádražní 1, 252 63 Roztoky<br>museum,	post_box	Česká pošta s.p.	cp:201802
+17704:302	50.16054579999999	14.3882883	<b>Na Vrškách</b><br>Roztoky, Praha-západ	Lidická 372, 252 63 Roztoky<br>restaurant	post_box	Česká pošta s.p.	cp:201802
+17704:308	50.157522	14.3950072	<b>U Nemocnice</b><br>Roztoky, Praha-západ	Tiché údolí 376, 252 63 Roztoky<br>hospital,	post_box	Česká pošta s.p.	cp:201802
+17704:329	50.1538573	14.2846402	<b>na náměstí, Lichoceves</b><br>Lichoceves, Praha-západ	Lichoceves 20, 252 64 Lichoceves<br>	post_box	Česká pošta s.p.	cp:201802
+17704:379	50.063197	14.296564	<b>u stavebnin, Kněževes</b><br>Středokluky, Praha-západ	areál PHL, Do Blatin 373/5, 155 21 Praha-Zličín<br>store	post_box	Česká pošta s.p.	cp:201802
+17704:444	49.90993539999999	14.2261462	<b>5. května čp. 909, Mníšek pod Brdy</b><br>	5. května 909, 252 30 Řevnice<br>street_address	post_box	Česká pošta s.p.	cp:201802
+17704:516	49.9125028	14.2297222	<b>u požární zbrojnice, Halouny</b><br>Halouny, Svinaře, Beroun	0e, Culgoa Circuit 8, 2606 O'Malley<br>fire_station,	post_box	Česká pošta s.p.	cp:201802
+17704:638	50.050151	14.3526058	<b>Nové Butovice Metro, P 5</b><br>Stodůlky, Praha, Hl. město Praha	Bucharova 1314/8, 158 00 Praha 13-Stodůlky<br>real_estate_agency	post_box	Česká pošta s.p.	cp:201802
+17704:664	50.1004266	14.3850148	<b>Šárecká 1802/1, Dejvice, 16000, Praha</b><br>Šárecká 1, P 6	Šárecká 1802/1, 160 00 Praha 6-Dejvice<br>street_address	post_box	Česká pošta s.p.	cp:201802
+17704:667	50.0987952	14.3636977	<b>Evropská 690/138, Vokovice, 16000, Praha</b><br>Evropská 690/138	Evropská 690/138, 160 00 Praha 6-Vokovice<br>street_address	post_box	Česká pošta s.p.	cp:201802
+17704:672	50.0968432	14.3545299	<b>Evropská/Etiopská - u parkoviště restaurace KFC</b><br>Vokovice, Praha, Hl. město Praha	Etiopská 686/3, 160 00 Praha 6<br>restaurant	post_box	Česká pošta s.p.	cp:201802
+17704:694	50.0903776	14.3071336	<b>Ciolkovského, P 6</b><br>Ruzyně, Praha, Hl. město Praha	Ciolkovského 857/6, 161 00 Praha 6-Ruzyně<br>street_address	post_box	Česká pošta s.p.	cp:201802
+17704:706	50.1069669	14.3779229	<b>Za Hanspaulkou, P 6</b><br>Dejvice, Praha, Hl. město Praha	Za Hanspaulkou 895/6, 160 00 Praha 6-Dejvice<br>street_address	post_box	Česká pošta s.p.	cp:201802
+17704:786	50.0851361	14.3720045	<b>Pod Drinopolem, P 6</b><br>Břevnov, Praha, Hl. město Praha	Pod Drinopolem 1455/6, 169 00 Praha 6-Břevnov<br>street_address	post_box	Česká pošta s.p.	cp:201802
+17704:874	49.895575	13.9606891	<b>u obecního úřadu, Bavoryně</b><br>Bavoryně, Beroun	Bavoryně 8, 267 51 Bavoryně<br>	post_box	Česká pošta s.p.	cp:201802
+17704:882	49.9129026	13.9779939	<b>Husova čp.166, Zdice</b><br>Zdice, Beroun	Husova 953, 267 51 Zdice<br>finance,post_office	post_box	Česká pošta s.p.	cp:201802
+17704:893	49.8319139	13.9962572	<b>čp. 45, Lhotka</b><br>Lhotka, Beroun	Lhotka 45, 267 23 Lhotka<br>street_address	post_box	Česká pošta s.p.	cp:201802
+17704:91	50.1352749	14.3832182	<b>Suchdolská 141/28, Sedlec, 16000, Praha</b><br>Suchdolská 141/28, P 6	Suchdolská 141/28, 160 00 Praha-Suchdol-Sedlec<br>street_address	post_box	Česká pošta s.p.	cp:201802
+19007:1824	50.1640301	14.4839001	<b>Na Hlavní, Praha 82</b><br>Březiněves, Praha, Hl. město Praha	Na Hlavní 82/12, 182 00 Praha-Březiněves<br>street_address	post_box	Česká pošta s.p.	cp:201802
+19007:1921	50.08866200000001	14.571443	<b>Hotel Svornost, Praha 912</b><br>Dolní Počernice, Praha, Hl. město Praha	Novozámecká 284/284, 190 12 Praha-Dolní Počernice<br>lodging,restaurant	post_box	Česká pošta s.p.	cp:201802
+19007:2002	50.1881978	14.6519477	<b>nemocnice Brandýs n/L</b><br>Brandýs nad Labem-Stará Boleslav, Praha-východ	Brázdimská 1000/3, Brandýs nad Labem, 250 01 Brandýs nad Labem-Stará Boleslav<br>hospital,	post_box	Česká pošta s.p.	cp:201802
+19007:908	50.1240813	14.4561227	<b>Klapkova - Veltěžská, Praha 8</b><br>Kobylisy, Praha, Hl. město Praha	Klapkova 3/26, 182 00 Praha 8-Kobylisy<br>library,	post_box	Česká pošta s.p.	cp:201802
+19007:951	50.1082701	14.5823072	<b>CČM Černý most, Praha 9</b><br>Černý Most, Praha, Hl. město Praha	Chlumecká 765/6, 198 19 Praha 9-Černý Most-Praha 14<br>shopping_mall	post_box	Česká pošta s.p.	cp:201802
+19007:957	50.107192	14.5439434	<b>Poděbradská-Slévačská, Praha 9</b><br>Hloubětín, Praha, Hl. město Praha	Slévačská 744/1, 190 00 Praha 14<br>lodging,	post_box	Česká pošta s.p.	cp:201802
+19007:966	50.13480879999999	14.5025219	<b>Obch.centr.Tesko, Veselská, P 9 Letňany</b><br>Letňany, Praha, Hl. město Praha	Veselská 663, 199 06 Praha-Letňany<br>grocery_or_supermarket,store,supermarket	post_box	Česká pošta s.p.	cp:201802
+25107:189	49.9914204	14.854277	<b>ul. Pražská - Jednota, Kostelec n/Č.l.</b><br>Kostelec nad Černými lesy, Praha-východ	Jevanská 190, 281 63 Kostelec nad Černými lesy<br>grocery_or_supermarket,store	post_box	Česká pošta s.p.	cp:201802
+25107:190	49.9886132	14.8647672	<b>Kutnohorská - nemocnice, Kostelec n/Č.l.</b><br>Kostelec nad Černými lesy, Praha-východ	Kutnohorská 379, 281 63 Kostelec nad Černými lesy<br>hospital,	post_box	Česká pošta s.p.	cp:201802
+25107:191	49.99235119999999	14.8435857	<b>prodejna Skalka, Kostelec n/Č.l.</b><br>Kostelec nad Černými lesy, Praha-východ	Pražská 857, 281 63 Kostelec nad Černými lesy<br>general_contractor,store	post_box	Česká pošta s.p.	cp:201802
+25107:210	49.9442515	14.9689998	<b>U obecního úřadu Barchovice</b><br>Barchovice, Kolín	Barchovice 68, 281 63 Barchovice<br>	post_box	Česká pošta s.p.	cp:201802
+25107:223	49.9963243	14.9593116	<b>Molitorov, naproti č.p. 33</b><br>Molitorov, Kouřim, Kolín	p, Molitorov 33, 281 63 Kouřim<br>subpremise	post_box	Česká pošta s.p.	cp:201802
+25107:228	50.0321744	14.9447577	<b>Borek 8, 28163, Třebovle</b><br>Borek 8, Třebovle	Borek 8, 281 63 Třebovle<br>street_address	post_box	Česká pošta s.p.	cp:201802
+25107:252	50.0761663	14.8642921	<b>U kina Svět, Český Brod</b><br>Český Brod, Kolín	Krále Jiřího 332, 282 01 Český Brod<br>electronics_store,home_goods_store,movie_theater,store	post_box	Česká pošta s.p.	cp:201802
+25107:86	49.877255	14.4930127	<b>u firmy HAKI 94, Studené</b><br>Studené, Jílové u Prahy, Praha-západ	Studené 94, 254 01 Jílové u Prahy<br>	post_box	Česká pošta s.p.	cp:201802
+25607:278	49.1294114	13.7295047	<b>Vlkonice 18</b><br>	Vlkonice 18, 384 86 Vacov<br>street_address	post_box	Česká pošta s.p.	cp:201802
+26907:124	50.1292091	13.5440923	<b>Čížkov č.56</b><br>Oráčov, Rakovník	Oráčov 56, 270 32 Oráčov<br>street_address	post_box	Česká pošta s.p.	cp:201802
+26907:153	50.0882219	14.4105141	<b>cihelna, Huřviny</b><br>Rakovník II, Rakovník	Cihelná 2b, 118 00 Praha-Malá Strana<br>restaurant	post_box	Česká pošta s.p.	cp:201802
+26907:17	50.1077659	13.7173802	<b>Nemocnice</b><br>Rakovník II, Rakovník	Dukel. hrdinů 200, 269 01 Rakovník<br>hospital,	post_box	Česká pošta s.p.	cp:201802
+26907:194	50.1842038	13.8054391	<b>Supermarket, Řevničov</b><br>Řevničov, Rakovník	Karlovarská 79, 270 54 Řevničov<br>grocery_or_supermarket,store	post_box	Česká pošta s.p.	cp:201802
+26907:2	50.0996475	13.7300779	<b>Domov důchodců 251</b><br>Rakovník II, Rakovník	S. K. Neumanna 251, 269 01 Rakovník<br>	post_box	Česká pošta s.p.	cp:201802
+26907:202	50.2242617	13.8827812	<b>potraviny, Bdín</b><br>Bdín, Rakovník	Srbeč 144, 270 65 Srbeč<br>grocery_or_supermarket,store	post_box	Česká pošta s.p.	cp:201802
+26907:32	50.10848350000001	13.7109004	<b>obchod, Přílepy</b><br>Přílepy, Rakovník	Dukel. hrdinů 2546, 269 01 Rakovník<br>grocery_or_supermarket,store,supermarket	post_box	Česká pošta s.p.	cp:201802
+26907:38	50.098033	13.6543116	<b>Senomaty - OÚ</b><br>Senomaty, Rakovník	Nám. Karla Buriana 55, 270 31 Senomaty<br>	post_box	Česká pošta s.p.	cp:201802
+26907:65	50.196206	13.7084292	<b>Mutějovice - Jednota</b><br>Mutějovice, Rakovník	Na Příči 127, 270 07 Mutějovice<br>grocery_or_supermarket,store	post_box	Česká pošta s.p.	cp:201802
+26907:69	50.196206	13.7084292	<b>Jednota , Nesuchyně</b><br>Nesuchyně, Rakovník	Na Příči 127, 270 07 Mutějovice<br>grocery_or_supermarket,store	post_box	Česká pošta s.p.	cp:201802
+26907:93	49.97875819999999	13.8850316	<b>Karlov č.p.61</b><br>Roztoky, Rakovník	Roztoky 61, 270 23 Roztoky<br>street_address	post_box	Česká pošta s.p.	cp:201802
+27207:107	50.163377	14.149292	<b>Vrapická ul 36</b><br>Vrapice, Kladno	Vrapická 53, 272 03 Kladno<br>	post_box	Česká pošta s.p.	cp:201802
+27207:11	50.1416042	14.0925231	<b>škola  na Amálce</b><br>Kladno, Kladno	Zd. Petříka 1756, 272 01 Kladno<br>school	post_box	Česká pošta s.p.	cp:201802
+27207:118	50.10056489999999	14.0042063	<b>Žilina - Jednota</b><br>Žilina, Kladno	Antonína Milfaita 92, 273 01 Žilina<br>grocery_or_supermarket,store	post_box	Česká pošta s.p.	cp:201802
+27207:12	50.1414653	14.0982004	<b>restaurace u Dvořáků</b><br>Kladno, Kladno	Fibichova 1647, 272 01 Kladno<br>restaurant	post_box	Česká pošta s.p.	cp:201802
+27207:14	50.1458972	14.1063137	<b>nádraží ČSD</b><br>Kladno, Kladno	Dukel. hrdinů 1639, 272 01 Kladno<br>bus_station,transit_station	post_box	Česká pošta s.p.	cp:201802
+27207:154	50.2848614	14.2747503	<b>Uhy - prodejna</b><br>Uhy, Kladno	Uhy 24, 273 24 Uhy<br>grocery_or_supermarket,store	post_box	Česká pošta s.p.	cp:201802
+27207:16	50.1369749	14.1020787	<b>Sítná - hotel Kladno</b><br>Kladno, Kladno	nám. Sítná 3113, Kročehlavy, 272 01 Kladno<br>lodging,restaurant	post_box	Česká pošta s.p.	cp:201802
+27207:168	50.1446981	14.2002713	<b>Lidice-památník (stojan)</b><br>Lidice, Kladno	Tokajická 152, 273 54 Lidice<br>	post_box	Česká pošta s.p.	cp:201802
+27207:19	50.132812	14.111545	<b>samoobsluha ulice M. Horákové</b><br>Kročehlavy, Kladno	M. Horákové 2751, Kročehlavy, 272 01 Kladno<br>grocery_or_supermarket,store,supermarket	post_box	Česká pošta s.p.	cp:201802
+27207:20	50.1311561	14.1166451	<b>Kaufland</b><br>Kladno, Kladno	Italská 50, Kročehlavy, 272 01 Kladno<br>grocery_or_supermarket,store,supermarket	post_box	Česká pošta s.p.	cp:201802
+27207:24	50.1344642	14.1291098	<b>Albert - Obránců Míru</b><br>Kročehlavy, Kladno	Obránců míru 2427, 272 01 Kladno<br>grocery_or_supermarket,store,supermarket	post_box	Česká pošta s.p.	cp:201802
+27207:257	50.2099172	13.9834124	<b>Malíkovice, obecní úřad</b><br>Malíkovice, Kladno	Malíkovice 17, 273 77 Malíkovice<br>	post_box	Česká pošta s.p.	cp:201802
+27207:28	50.151515	14.1169545	<b>Poldi - vrátnice  1</b><br>Kladno, Kladno	Průmyslová 1343, 272 01 Kladno<br>	post_box	Česká pošta s.p.	cp:201802
+27207:281	50.2338294	14.1871385	<b>Zvoleněves - MŠ - rozcestí</b><br>Zvoleněves, Kladno	Zvoleněves 282, 273 25 Zvoleněves<br>school	post_box	Česká pošta s.p.	cp:201802
+27207:88	50.1793239	14.1570436	<b>Obecní úřad-Cvrčovice</b><br>Cvrčovice, Kladno	tř. Rudé armády 142, 273 41 Cvrčovice<br>	post_box	Česká pošta s.p.	cp:201802
+27207:9	50.1384114	14.0895075	<b>Fr, Kloze Domov důchodců</b><br>Kladno, Kladno	Františka Kloze 1178, 272 01 Kladno<br>	post_box	Česká pošta s.p.	cp:201802
+27607:1	50.3469232	14.4857433	<b>Pražská u nemocnice</b><br>Mělník, Mělník	Pražská 528, 276 01 Mělník<br>hospital,	post_box	Česká pošta s.p.	cp:201802
+27607:4	50.34866599999999	14.490762	<b>Mladoboleslavská- motot.</b><br>Mělník, Mělník	Mladoboleslavská 2862, 276 01 Mělník<br>car_dealer,car_repair,store	post_box	Česká pošta s.p.	cp:201802
+28900:14	50.2258009	15.3666292	<b>prodejna, Kamilov</b><br>Kamilov, Sloveč, Nymburk	Sloveč 100, 289 03 Sloveč<br>grocery_or_supermarket,store	post_box	Česká pošta s.p.	cp:201802
+28900:2	50.207855	15.299073	<b>před ČS,Nám. Republiky, Městec Králové</b><br>Městec Králové, Nymburk	nám. Republiky 74, 289 03 Městec Králové<br>bank,finance,	post_box	Česká pošta s.p.	cp:201802
+30071:161	49.7093773	13.1688819	<b>Nýřany DIOSS kolonie u č.p. 102</b><br>Nýřany, Plzeň-sever	Na Tesle 1238, 330 23 Nýřany<br>store	post_box	Česká pošta s.p.	cp:201802
+30071:229	49.6960734	13.3226092	<b>Plzeň,Lhota - prodejna</b><br>Lhota, Plzeň-město	K Sinoru 251/9, 301 00 Plzeň 10-Lhota<br>home_goods_store,store	post_box	Česká pošta s.p.	cp:201802
+30071:237	49.7286371	13.3089834	<b>Plzeň,Nová Hospoda 10</b><br>Nová Hospoda, Plzeň-město	Prostřední 7, 318 00 Plzeň 3-Nová Hospoda<br>	post_box	Česká pošta s.p.	cp:201802
+30071:240	49.8244536	13.3883291	<b>Třemošná - ves u č.p. 1  Americká</b><br>Třemošná, Plzeň-sever	Americká 146, 330 11 Třemošná<br>school	post_box	Česká pošta s.p.	cp:201802
+30071:274	49.84180060000001	13.3581265	<b>Horní Bříza - ZKZ  stánek</b><br>Horní Bříza, Plzeň-sever	Tř. 1. máje 210, 330 12 Horní Bříza<br>school	post_box	Česká pošta s.p.	cp:201802
+30071:277	49.8431062	13.3604316	<b>Horní Bříza - sídliště Lékařský dům</b><br>Horní Bříza, Plzeň-sever	Tř. 1. máje 633, 330 12 Horní Bříza<br>doctor,	post_box	Česká pošta s.p.	cp:201802
+30071:337	49.8121291	13.1044452	<b>Čerňovice - náves</b><br>Čerňovice, Plzeň-sever	Čerňovice 72, 330 36 Čerňovice<br>	post_box	Česká pošta s.p.	cp:201802
+30071:389	49.98249	13.485015	<b>Kralovice,nemocnice</b><br>Kralovice, Plzeň-sever	Na Palcátech 368, 331 41 Kralovice<br>hospital,	post_box	Česká pošta s.p.	cp:201802
+30071:412	49.91643879999999	13.544293	<b>Liblín,ÚSP</b><br>Liblín, Rokycany	Liblín 1, 331 41 Liblín<br>	post_box	Česká pošta s.p.	cp:201802
+30071:416	50.6203438	15.1868685	<b>Rakousy č.p. 5</b><br>Rakousy, Semily	Rakousy 5, 511 01 Rakousy<br>street_address	post_box	Česká pošta s.p.	cp:201802
+30071:432	49.9875153	13.4912356	<b>Kožlany u autobusové zastávky</b><br>Kožlany, Plzeň-sever	ČSAD autobusy Plzeň a.s., Nádražní 566, 331 41 Kralovice<br>	post_box	Česká pošta s.p.	cp:201802
+30072:11	49.64517430000001	13.5632042	<b>Milínov,autobus. zastávka</b><br>Milínov, Plzeň-jih	Milínov 23, 332 04 Milínov<br>	post_box	Česká pošta s.p.	cp:201802
+30072:15	49.61326469999999	13.4914926	<b>Vlčtejn,samoobsluha</b><br>Vlčtejn, Plzeň-jih	Vlčtejn 4, 332 04 Vlčtejn<br>restaurant	post_box	Česká pošta s.p.	cp:201802
+30072:168	49.5624615	13.3377799	<b>Příchovice, náves</b><br>Příchovice, Plzeň-jih	Příchovice 37, 334 01 Přeštice<br>local_government_office,	post_box	Česká pošta s.p.	cp:201802
+30072:256	49.4820114	13.5031995	<b>Žinkovy - škola</b><br>Žinkovy, Plzeň-jih	Žinkovy 49, 335 54 Žinkovy<br>school	post_box	Česká pošta s.p.	cp:201802
+30072:28	49.6408389	13.5186356	<b>Nezvěstice, školka</b><br>Nezvěstice, Plzeň-město	Nezvěstice 105, 332 04 Nezvěstice<br>school	post_box	Česká pošta s.p.	cp:201802
+30072:283	49.57949259999999	13.5320697	<b>Blovice - nádraží</b><br>Blovice, Plzeň-jih	Sýkorova 194, 336 01 Blovice<br>bar,restaurant	post_box	Česká pošta s.p.	cp:201802
+30072:285	49.582239	13.540133	<b>Blovice - náměstí</b><br>Blovice, Plzeň-jih	Masarykovo nám. 143, 336 01 Blovice<br>	post_box	Česká pošta s.p.	cp:201802
+30072:309	49.5296433	13.4539151	<b>Letiny - lázně</b><br>Letiny, Plzeň-jih	Letiny 70, 336 01 Letiny<br>	post_box	Česká pošta s.p.	cp:201802
+30072:335	49.6147034	13.6040347	<b>Struhaře - Obecní úřad</b><br>Struhaře, Spálené Poříčí, Plzeň-jih	Nám. Svobody 132, 335 61 Spálené Poříčí<br>city_hall,local_government_office,	post_box	Česká pošta s.p.	cp:201802
