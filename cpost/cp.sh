@@ -1,4 +1,4 @@
-﻿#!/bin/bash
+#!/bin/bash
 # 
 
 # potřebuje datamash ve zdrojovém adresáři: check
@@ -18,7 +18,9 @@ if [ ! -f cp_ref_coord_history.txt ]; then touch cp_ref_coord_history.txt ;fi
 if [ ! -f cp_ref_coord_source.txt ]; then touch cp_ref_coord_source.txt;fi
 if [ ! -f cp_ref_dny_konverze.txt ]; then touch cp_ref_dny_konverze.txt;fi
 if [ ! -f cp_ref_id_collection_time_history.txt ]; then touch cp_ref_id_collection_time_history.txt ;fi
-
+# check geokodované, odečítají se později
+if [ ! -f sBSGC_ROOFTOP.txt ]; then touch ROOFTOP.txt ;fi
+if [ ! -f sBSGC_GEOMETRIC_CENTER.txt ]; then touch sBSGC_GEOMETRIC_CENTER.txt ;fi
 
 # nezměnily se hlavičky?
 cp_header=`head -n1 $cp_file | tr -d '\r'`
@@ -156,11 +158,27 @@ echo "Address" > cpost_NoCoord_Geocode.csv	# hlavička csv
     sed 's/\;\+/\;/g;s/\;$//' |	# další pole jako poznámka 
     sed -r 's/ /xxx/g; s/(\w+)\;+\1/\1/g ; s/xxx/ /g; s/\;/, /g' |	# vymazat opakovaná slova
     tee cpost_Adr.txt |	# ref + adresy
-    join -t$'\t' -v 2 cp_ref_coord_history.txt - |	# rozdíly oproti historii souřadnic
-    tee cpost_NoCoord.txt |	# ref + adresa pro geokodovani
-    cut -f2- | sed 's/\t/, /' |	# jen adres. pole, spojit
-    sed "s/\(.*\)/\"\1\"/" >> cpost_NoCoord_Geocode.csv	# quote
-
+    join -t$'\t' -j 1 -v 2 cp_ref_coord_history.txt - |	# rozdíly oproti historii souřadnic
+	tee cpost_NoCoord.bak	| # skutečné rozdíly
+	join -t$'\t' -v 2 -j 1 cp_ref_coord_geocoded.txt - |	# vynech už jednou geokodované
+    sort > cpost_NoCoord.txt.bak 	# ref + adresa pro geokodovani, setřídění neškodí
+	cat sBSGC_ROOFTOP.txt sBSGC_GEOMETRIC_CENTER.txt | 	# z nějakého předchozího kódování, pro jistotu odečteme
+	cut -f1 | sort | join -t$'\t' -j 1 -v 1 cpost_NoCoord.txt.bak - |
+	tee cpost_NoCoord.txt |	# odečtené soubory připravené pro JOSM
+    grep "(" | awk -F"[()]" ' { print $1$3"\t"$2} ' | 	# se závorkami, zkusíme upravit
+	tee tst.txt | cut -f-2 | paste -d' ' - <( cut -f3- tst.txt ) | 
+	sed 's/ \+/ /g' | awk -F"\t" '{ print $1"\t\""$2"\"\t"$3 }' > GC_zavorky.csv
+	
+	grep -v "(" cpost_NoCoord.txt |	# zbytek, můžeme zkusit něco dalšího
+	sed "s/\-*[uU] autobusové zastávky,* *//; s/[ -]*BUS zastávka//; s/[na ]*BUS zast.// ; s/[na ]*zastávce FTL//; s/na zdi vedle//; s/stojan zast.BUS//; s/na aut.zastávce//; s/aut.\s*zastávka//; s/\bstojan.*\b//; s/BUS zastávka//; s/,\t/\t/" | 
+	awk -F"\t" '{ print $1"\t\""$2", "$3"\"" }' > GC_po_upravach.csv
+	
+# závěrečné spojení souborů
+	echo "ref"$'\t'"Address" | 
+		cat - GC_zavorky.csv GC_po_upravach.csv |
+		sed "s/\t$//" > cpost_NoCoord_Geocode.csv
+	
+	rm tst.txt	# ukliď po sobě
 
 echo
 echo "Vytvořen soubor ${b}cpost_NoCoord.txt${n}"
