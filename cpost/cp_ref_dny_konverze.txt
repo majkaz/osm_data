@@ -1,3 +1,4 @@
+Omezeni	Dny
 1 - pondělí	Mo
 1-5 - pracovní dny (pondělí až pátek)	Mo-Fr
 2 - úterý	Tu
