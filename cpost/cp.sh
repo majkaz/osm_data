@@ -167,16 +167,16 @@ echo "Address" > cpost_NoCoord_Geocode.csv	# hlavička csv
 	tee cpost_NoCoord.txt |	# odečtené soubory připravené pro JOSM
     grep "(" | awk -F"[()]" ' { print $1$3"\t"$2} ' | 	# se závorkami, zkusíme upravit
 	tee tst.txt | cut -f-2 | paste -d' ' - <( cut -f3- tst.txt ) | 
-	sed 's/ \+/ /g' | awk -F"\t" '{ print $1"\t\""$2"\"\t"$3 }' > GC_zavorky.csv
+	sed 's/ \+/ /g' | awk -F"\t" '{ print $1"\",\""$2"\","$3 }' > GC_zavorky.csv
 	
 	grep -v "(" cpost_NoCoord.txt |	# zbytek, můžeme zkusit něco dalšího
 	sed "s/\-*[uU] autobusové zastávky,* *//; s/[ -]*BUS zastávka//; s/[na ]*BUS zast.// ; s/[na ]*zastávce FTL//; s/na zdi vedle//; s/stojan zast.BUS//; s/na aut.zastávce//; s/aut.\s*zastávka//; s/\bstojan.*\b//; s/BUS zastávka//; s/,\t/\t/" | 
-	awk -F"\t" '{ print $1"\t\""$2", "$3"\"" }' > GC_po_upravach.csv
+	awk -F"\t" '{ print $1"\",\""$2", "$3"\"" }' > GC_po_upravach.csv
 	
 # závěrečné spojení souborů
-	echo "ref"$'\t'"Address" | 
+	echo "ref,Address" | 
 		cat - GC_zavorky.csv GC_po_upravach.csv |
-		sed "s/\t$//" > cpost_NoCoord_Geocode.csv
+		sed "s/,\"*$//" > cpost_NoCoord_Geocode.csv
 	
 	rm tst.txt	# ukliď po sobě
 
