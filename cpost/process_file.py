@@ -1,32 +1,59 @@
-﻿#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Python script for batch geocoding of addresses using the Google Geocoding API.
-This script allows for massive lists of addresses to be geocoded for free by pausing when the 
-geocoder hits the free rate limit set by Google (2500 per day).  If you have an API key for paid
-geocoding from Google, set it in the API key section.
-Addresses for geocoding can be specified in a list of strings "addresses". In this script, addresses
-come from a csv file with a column "Address". Adjust the code to your own requirements as needed.
-After every 500 successul geocode operations, a temporary file with results is recorded in case of 
-script failure / loss of connection later.
-Addresses and data are held in memory, so this script may need to be adjusted to process files line
-by line if you are processing millions of entries.
-Shane Lynn
-5th November 2016
-"""
+#!/usr/bin/env python
 
-import pandas as pd
-import requests
-import logging
-import time
+
 import sys
+import csv
+import pyproj
 
-logger = logging.getLogger("root")
-logger.setLevel(logging.DEBUG)
-# create console handler
-ch = logging.StreamHandler()
-ch.setLevel(logging.DEBUG)
-logger.addHandler(ch)
+#https://github.com/frewsxcv/python-geojson
+from geojson import Feature, Point, FeatureCollection
+import json
+
+# configuration
+osm_precision = 7
+bbox = {'min': {'lat': 48.55, 'lon': 12.09}, 'max': {'lat': 51.06, 'lon': 18.87}}
+
+# counters
+ln_count = 0
+missing_count = 0
+
+boxes = {}
+
+# Init projection
+inProj = pyproj.Proj(init='epsg:5514', proj='krovak', ellps='bessel', towgs84='570.8,85.7,462.8,4.998,1.587,5.261,3.56')
+outProj = pyproj.Proj(init='epsg:4326')
+
+
+# Check coors whether are in bbox
+def check_bbox(coors):
+    global bbox
+    if ( coors['lat'] >= bbox['min']['lat'] and coors['lat'] <= bbox['max']['lat'] and
+         coors['lon'] >= bbox['min']['lon'] and coors['lon'] <= bbox['max']['lon']):
+        return True
+    return False
+
+# merge box into list of boxes
+def merge_box(box):
+    global boxes
+
+    if (box['ref'] in boxes):
+        #print("%s: Merging key" % (box['ref']))
+        collection_times = box['collection_times']
+        key = list(collection_times.keys())[0]
+
+        if (key in boxes[box['ref']]['collection_times']):
+            boxes[box['ref']]['collection_times'][key] = ",".join([boxes[box['ref']]['collection_times'][key],collection_times[key]])
+        else:
+            boxes[box['ref']]['collection_times'][key] = collection_times[key]
+
+        #boxes[box['ref']]['collection_times'] = ",".join([boxes[box['ref']]['collection_times'], box['collection_times']])
+        #print("%s: %s " % (box['ref'],boxes[box['ref']]['collection_times']))
+    else:
+        boxes[box['ref']] = box
+
+# ------------
+#     Main
+# ------------
 
 # Read input parameters
 program_name = sys.argv[0]
@@ -36,152 +63,149 @@ if (len(arguments) != 2):
     print("Usage: %s IN_CSV_FILE OUT_GEOJSON_FILE" % (program_name))
     exit(1)
 
-input_filename = arguments[0]
-output_filename = arguments[1]
+infile = arguments[0]
+outfile = arguments[1]
 
-#------------------ CONFIGURATION -------------------------------
+print("Infile: %s; outfile: %s" % (infile, outfile))
 
-# Set your Google API key here. 
-# Even if using the free 2500 queries a day, its worth getting an API key since the rate limit is 50 / second.
-# With API_KEY = None, you will run into a 2 second delay every 10 requests or so.
-# With a "Google Maps Geocoding API" key from https://console.developers.google.com/apis/, 
-# the daily limit will be 2500, but at a much faster rate.
-# Example: API_KEY = 'AIzaSyC9azed9tLdjpZNjg2_kVePWvMIBq154eA'
-API_KEY = 'AIzaSyB3KKQq5eMAElwnnyymKxlfBOFCCfeVcB0'
-# Backoff time sets how many minutes to wait between google pings when your API limit is hit
-BACKOFF_TIME = 30
-# Set your output file name here.
-#output_filename = $1
-# Set your input file here
-#input_filename = $2
-# Specify the column name in your input data that contains addresses here
-address_column_name = "Address"
-# Return Full Google Results? If True, full JSON results from Google are included in output
-RETURN_FULL_RESULTS = False
+try:
+    with open(infile, newline='', encoding='cp1250') as csvfile:
+        csvreader = csv.DictReader(csvfile, delimiter=';')
+        for row in csvreader:
+            ln_count += 1
+            box = {}
+            krovak = {}
+            wgs84 = {}
+            collection_times = {}
 
-#------------------ DATA LOADING --------------------------------
+            box['ref'] = ("%s:%s" % (row['psc'], row['cis_schranky']))
 
-# Read the data to a Pandas Dataframe
-data = pd.read_csv(input_filename, encoding='utf8')
+            krovak['x'],krovak['y'] = row['sour_x'],row['sour_y']
+            box['krovak'] = krovak
 
-if address_column_name not in data.columns:
-	raise ValueError("Missing Address column in input data")
+            if krovak['x'] == "":
+                missing_count += 1
+                #print ("%s: Missing coordinates" % (box['ref']))
+            else :
+                lon, lat = pyproj.transform(inProj,outProj,-float(krovak['y']), -float(krovak['x']))
 
-# Form a list of addresses for geocoding:
-# Make a big list of all of the addresses to be processed.
-addresses = data[address_column_name].tolist()
+                wgs84['lon'] = round(lon, osm_precision)
+                wgs84['lat'] = round(lat, osm_precision)
+                if (check_bbox(wgs84)):
+                    box['wgs84'] = wgs84
+                else:
+                    print("Coordinates %s, %s out of bbox" % (wgs84['lat'], wgs84['lon']))
 
-# **** DEMO DATA / IRELAND SPECIFIC! ****
-# We know that these addresses are in Ireland, and there's a column for county, so add this for accuracy. 
-# (remove this line / alter for your own dataset)
-addresses = (data[address_column_name] + ',CZ').tolist()
+            box['psc'] = row['psc']
+            box['id'] = row['cis_schranky']
+            box['address'] = row['adresa']
+            box['place_desc'] = row['misto_popis']
+            box['suburb'] = row['cast_obce']
+            box['village'] = row['obec']
+            box['district'] = row['okres']
 
+            days = row['omezeni'].split()[0].replace('1','1Mo').replace('2','2Tu').replace('3','3We').replace('4','4Th').replace('5','5Fr').replace('6','6Sa').replace('7','7Su')
 
-#------------------	FUNCTION DEFINITIONS ------------------------
+            collection_times[days] = row['cas']
+            box['collection_times'] = collection_times
 
-def get_google_results(address, api_key=None, return_full_response=False):
-    """
-    Get geocode results from Google Maps Geocoding API.
-    
-    Note, that in the case of multiple google geocode reuslts, this function returns details of the FIRST result.
-    
-    @param address: String address as accurate as possible. For Example "18 Grafton Street, Dublin, Ireland"
-    @param api_key: String API key if present from google. 
-                    If supplied, requests will use your allowance from the Google API. If not, you
-                    will be limited to the free usage of 2500 requests per day.
-    @param return_full_response: Boolean to indicate if you'd like to return the full response from google. This
-                    is useful if you'd like additional location details for storage or parsing later.
-    """
-    # Set up your Geocoding url
-    geocode_url = "https://maps.googleapis.com/maps/api/geocode/json?address={}".format(address)
-    if api_key is not None:
-        geocode_url = geocode_url + "&key={}".format(api_key)
-        
-    # Ping google for the reuslts:
-    results = requests.get(geocode_url)
-    # Results will be in JSON format - convert to dict using requests functionality
-    results = results.json()
-    
-    # if there's no results or an error, return empty results.
-    if len(results['results']) == 0:
-        output = {
-            "formatted_address" : None,
-            "latitude": None,
-            "longitude": None,
-            "accuracy": None,
-            "google_place_id": None,
-            "type": None,
-            "postcode": None
-        }
-    else:    
-        answer = results['results'][0]
-        output = {
-            "formatted_address" : answer.get('formatted_address'),
-            "latitude": answer.get('geometry').get('location').get('lat'),
-            "longitude": answer.get('geometry').get('location').get('lng'),
-            "accuracy": answer.get('geometry').get('location_type'),
-            "google_place_id": answer.get("place_id"),
-            "type": ",".join(answer.get('types')),
-            "postcode": ",".join([x['long_name'] for x in answer.get('address_components') 
-                                  if 'postal_code' in x.get('types')])
-        }
-        
-    # Append some other details:    
-    output['input_string'] = address
-    output['number_of_results'] = len(results['results'])
-    output['status'] = results.get('status')
-    if return_full_response is True:
-        output['response'] = results
-    
-    return output
+            merge_box(box)
+except Exception as error:
+    print('Error :-(')
+    print(error)
+    exit(1)
 
-#------------------ PROCESSING LOOP -----------------------------
+# generate geojson
+print("Generating GeoJson")
 
-# Ensure, before we start, that the API key is ok/valid, and internet access is ok
-test_result = get_google_results("London, England", API_KEY, RETURN_FULL_RESULTS)
-if (test_result['status'] != 'OK') or (test_result['formatted_address'] != 'London, UK'):
-    logger.warning("There was an error when testing the Google Geocoder.")
-    raise ConnectionError('Problem with test results from Google Geocode - check your API key and internet connection.')
+coll = []
 
-# Create a list to hold results
-results = []
-# Go through each address in turn
-for address in addresses:
-    # While the address geocoding is not finished:
-    geocoded = False
-    while geocoded is not True:
-        # Geocode the address with google
-        try:
-            geocode_result = get_google_results(address, API_KEY, return_full_response=RETURN_FULL_RESULTS)
-        except Exception as e:
-            logger.exception(e)
-            logger.error("Major error with {}".format(address))
-            logger.error("Skipping!")
-            geocoded = True
-            
-        # If we're over the API limit, backoff for a while and try again later.
-        if geocode_result['status'] == 'OVER_QUERY_LIMIT':
-            logger.info("Hit Query Limit! Backing off for a bit.")
-            time.sleep(BACKOFF_TIME * 60) # sleep for 30 minutes
-            geocoded = False
+for k in boxes:
+    box = boxes[k]
+
+    if ('wgs84' in box and 'lat' in box['wgs84']):
+        props = {}
+        props['amenity'] = 'post_box'
+        props['ref'] = k
+        props['operator'] = 'Česká pošta, s.p.'
+
+        if (box['address']):
+            props['note'] = ('<br><b>Poznámka:</b> %s <br><b>Adresa:</b> %s' % (box['place_desc'], box['address']))
         else:
-            # If we're ok with API use, save the results
-            # Note that the results might be empty / non-ok - log this
-            if geocode_result['status'] != 'OK':
-                logger.warning("Error geocoding {}: {}".format(address, geocode_result['status']))
-            logger.debug("Geocoded: {}: {}".format(address, geocode_result['status']))
-            results.append(geocode_result)           
-            geocoded = True
+            props['note'] = ('<br><b>Poznámka:</b> %s <br><b>Adresa:</b> %s; %s; %s' % (box['place_desc'], box['district'], box['village'], box['suburb']))
 
-    # Print status every 100 addresses
-    if len(results) % 100 == 0:
-    	logger.info("Completed {} of {} address".format(len(results), len(addresses)))
-            
-    # Every 500 addresses, save progress to file(in case of a failure so you have something!)
-    if len(results) % 500 == 0:
-        pd.DataFrame(results).to_csv("{}_bak".format(output_filename))
+        if (box['collection_times']):
+            ct = []
+            for k in sorted(box['collection_times'].keys()):
+                key = k.replace('1Mo','Mo').replace('2Tu','Tu').replace('3We','We').replace('4Th','Th').replace('5Fr','Fr').replace('6Sa','Sa').replace('7Su','Su')
+                ct.append('%s %s' % (key, box['collection_times'][k]))
+            props['collection_times'] = '; '.join(ct)
 
-# All done
-logger.info("Finished geocoding all addresses")
-# Write the full results to csv using the pandas library.
-pd.DataFrame(results).to_csv(output_filename, encoding='utf8')
+        feature = Feature(geometry=Point((box['wgs84']['lon'], box['wgs84']['lat'])), properties=props)
+        coll.append(feature)
+
+feature_collection = FeatureCollection(coll)
+
+# write to file
+try:
+    with open(outfile, encoding='utf-8', mode='w+') as geojsonfile:
+        geojsonfile.write(json.dumps(feature_collection, ensure_ascii=False, indent=2))
+except Exception as error:
+    print('Error :-(')
+    print(error)
+    exit(1)
+
+# some final stats
+print("Total lines: %d, missing coors: %d" % (ln_count, missing_count))
+print('Boxes: %d' % (len(boxes)))
+
+
+# Prepare inserts into database
+print("Generating sql")
+try:
+    with open('inserts.sql', encoding='utf-8', mode='w+') as sqlfile:
+        for k in boxes:
+            box = boxes[k]
+            data = {}
+
+            data['ref'] = box['ref']
+            data['psc'] = box['psc']
+            data['id'] = box['id']
+
+            if ('wgs84' in box and 'lat' in box['wgs84']):
+                data['x'] = box['krovak']['x']
+                data['y'] = box['krovak']['x']
+                data['lat'] = box['wgs84']['lat']
+                data['lon'] = box['wgs84']['lon']
+            else:
+                data['x'] = 'null'
+                data['y'] = 'null'
+                data['lat'] = 'null'
+                data['lon'] = 'null'
+
+            if ('address' in box):
+                data['address'] = box['address']
+            else:
+                data['address'] = ''
+
+            data['place'] = box['place_desc']
+            data['suburb'] = box['suburb']
+            data['village'] = box['village']
+            data['district'] = box['district']
+
+            if ('collection_times' in box):
+                ct = []
+                for k in sorted(box['collection_times'].keys()):
+                    key = k.replace('1Mo','Mo').replace('2Tu','Tu').replace('3We','We').replace('4Th','Th').replace('5Fr','Fr').replace('6Sa','Sa').replace('7Su','Su')
+                    ct.append('%s %s' % (key, box['collection_times'][k]))
+                data['collection_times'] = '; '.join(ct)
+            else:
+                data['collection_times'] = 'null'
+
+            sqlfile.write("'%s', %s, %s, %s, %s, %s, %s, '%s', '%s', '%s', '%s', '%s', '%s', 201801\n" %
+            (data['ref'], data['psc'], data['id'], data['x'], data['y'], data['lat'], data['lon'], data['address'], data['place'], data['suburb'], data['village'], data['district'], data['collection_times']))
+
+except Exception as error:
+    print('Error :-(')
+    print(error)
+    exit(1)
