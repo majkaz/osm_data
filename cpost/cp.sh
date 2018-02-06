@@ -2,7 +2,6 @@
 # 
 
 # potřebuje datamash ve zdrojovém adresáři: check
-command -v ./datamash >/dev/null 2>&1 || { echo >&2 "Skript vyžaduje datamash ve stejném adresáři"; exit 1; }
 
 # jméno souboru z pošty (.csv) jako parametr, získání data souboru
 cp_file=`basename "$1"`
@@ -12,6 +11,100 @@ cp_date=${cp_date##*_}
 # proměnné pro formátování výstupu na terminál
 b=$(tput bold)
 n=$(tput sgr0)
+
+# nezměnily se hlavičky?
+cp_header=`head -n1 $cp_file | tr -d '\r'`
+h_txt="psc;zkrnaz_posty;cis_schranky;adresa;sour_x;sour_y;misto_popis;cast_obce;obec;okres;cas;omezeni"
+h_tab="ref\tpsc\tzkrnaz_posty\tcis_schranky\tadresa\tsour_x\tsour_y\tmisto_popis\tcast_obce\tobec\tokres\tcas\tomezeni"
+
+
+if [ $cp_header != $h_txt ]
+then 
+    echo "Záhlaví souboru je $cp_header"
+    echo "Byla očekávána struktura:"
+    echo $h_txt
+    echo "Skript nemůže s touto strukturou pracovat."
+    exit
+fi
+
+echo
+echo "Soubor je $cp_file, data z ${b}$cp_date${n}"
+echo "Konverze souborů pro další zpracování..."
+echo
+
+
+# konvertovat vstupní soubor do tab separated
+echo 
+	dos2unix < $cp_file | iconv -f cp1250 -t utf-8 | tr ';'  '\t' | 
+		tee temp.tab | # do dočasného
+		cut -f 1,3 | tr '\t' ':' | paste - temp.tab | # přidat ref
+		tee temp2.tab | 
+		awk -F$'\t' 'NF != 13' |  # chybně rozdělené řádky
+		tee cpost_err.csv # je možné spravit?
+echo
+echo "----------------------------------"
+echo
+# vybrat jen řádky se správným počtem polí
+	awk -F$'\t' 'NF == 13' temp2.tab | # správné
+		# <-- sem připojit spravené 
+		tail -n+2 | sort -t$'\t' -k 13 > temp.tab  # setřídit podle dnů výběru, vynech záhlaví
+		echo -e "$h_tab" | cat - temp.tab > temp_no_join.tab  
+	join --header -t$'\t' -1 13 -2 1 temp_no_join.tab cp_ref_dny_konverze.txt | tee temp_zpracovani.tab | # připojit konverzní tabulku
+# sloučení doby výběru
+	datamash --header-in -g omezeni,ref,dny collapse cas first 3-12  > temp_cas.tab 
+	paste -d' ' <(cut -f-3 temp_cas.tab) <( cut -f 4- temp_cas.tab ) | tee temp_dny.tab 
+# spojení den+cas
+	echo -e "omezeni\tref\tvyber\tpsc\tpsc\tzkrnaz_posty\tcis_schranky\tadresa\tsour_x\tsour_y\tmisto_popis\tcast_obce\tobec\tokres" > temp_dny_slouc.tab
+	datamash -g 2 collapse 3 first 4-13 < temp_dny.tab >> temp_dny_slouc.tab # sloučení dní
+	exit 
+	exit 
+	
+	exit
+	# rm temp.tab temp2.tab
+#
+exit
+# rozdělit na část se souřadnicemi a bez souřadnic
+	awk -F"\t" '$5 == ""' temp_zpracovani.tab > "$cp_date"_NoCoord.tab
+
+# konverze souřadnic Křovák - WGS, jen pro schránky se souřadnicemi
+# potřebuje cs2cs, datamash
+	awk -F"\t" '$5 != ""' temp_zpracovani.tab |
+		tee "$cp_date"_Coord.tab | # pro jistotu
+		datamash -H -g psc,cis_schranky first sour_x,sour_y | 
+		tail -n+2 | tee krovak.tab | # vrácení souřadnic
+		cut -f3- | sed 's/^/-/; s/\t/\t-/' > temp.tab # negativní souřadnice
+	cs2cs -f "%f" +proj=krovak +ellps=bessel +towgs84=570.8,85.7,462.8,4.998,1.587,5.261,3.56 +to +init=epsg:4326 temp.tab | 
+		cut -f2- | tr ' ' '\t' | paste krovak.tab - | 
+		cat <(echo "psc;cis_schranky;sour_y;sour_x;latitude;longitude" | tr ';' '\t' ) - |
+		tee konvertovane.tab |
+		paste "$cp_date"_Coord.tab - | cut -f-14,17- > "$cp_date"_Coord_complete.tab
+
+# collection_time
+datamash -Hs -g psc,cis_schranky,omezeni collapse cas first latitude,longitude,misto_popis,cast_obce,obec,okres < "$cp_date"_Coord_complete.tab | 
+(read -r; printf "%s\n" "$REPLY"; sort -t$'\t' -k 3 ) | # setřídit, vynech záhlaví
+join --header -t$'\t' -1 1 -2 3 cp_ref_dny_konverze.txt - > temp.tab
+
+exit 
+
+# sloučení den + hodina
+paste -d' ' <( cut -f2 temp.tab) <( cut -f5 temp.tab ) | paste - <( cut -f 3-4,6- temp.tab) | 
+# sloučení dny výběru
+paste -d' ' <( cut -f2 temp.tab) <( cut -f5 temp.tab ) | 
+paste - <( cut -f 3-4,6- temp.tab) | tail -n+2 | 
+tee temp2.tab |
+datamash -g 2,3 collapse 1 first 4-9 | 
+cat <(echo "psc;cis_schranky;collection_times;latitude;longitude;misto_popis;cast_obce;obec;okres" | tr ';' '\t') - > temp.tab
+
+
+
+
+rm temp.tab krovak.tab # ukliď
+
+
+echo "Hotovo"
+
+exit
+
 
 # check history, pokud neexistuje, pro jistotu vytvoř prázdné soubory
 if [ ! -f cp_ref_coord_history.txt ]; then touch cp_ref_coord_history.txt ;fi

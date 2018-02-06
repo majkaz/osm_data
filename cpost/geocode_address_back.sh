@@ -12,7 +12,7 @@ b=$(tput bold)
 n=$(tput sgr0)
 
 sBS="cpost_NoCoord2.txt"	# soubor bez souřadnic
-sGC="out.csv"	# soubor se souřadnicemi + detaily
+sGC="out30071.csv"	# soubor se souřadnicemi + detaily
 dtS=`date +%Y%m -r "$sGC"`
 dtN=`date +%Y%m%d`
 # další zpracování po geokódování

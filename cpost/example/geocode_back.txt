@@ -1,0 +1,9 @@
+tr "'" "_" < inserts.csv | awk -F$'\t' '/null/ {if ($10 == $11 && $11 == $12 && $10 != "__") print $1"\t"$9 $10}' | sed 's/__/, /' | tr '_\t' '",' > in.csv
+
+ 
+paste -d, in.csv out.csv | csv2tab | grep -v -e ROOFTOP -e GEOMETRIC_CENTER -e RANGE_INTERPOLATED | awk -F$'\t' '{ print _$1_"\t"_$2_}' > OUT_NO_LAT_LON.csv
+
+paste -d, OUT_NO_LAT_LON.csv OUT2.csv  | csv2tab | grep -e ROOFTOP -e GEOMETRIC_CENTER -e RANGE_INTERPOLATED | awk -F$'\t' '{ print $1"\t"$8"\t"$9"\t"$2"\t"$7"\t"$4"\t"$13}' >> OUT_LAT_LON.csv
+
+
+ 

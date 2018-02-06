@@ -1,0 +1,115 @@
+ref	lat	lon	address	address_back	accuracy	type
+79207:12	49.97890839999999	17.4554396	Pod Lipami 1738/56, Bruntál	Pod Lipami 1738/56, Bruntál,CZ	ROOFTOP	street_address
+79207:13	49.9906593	17.4675235	Dukelská 1501/2, Bruntál, Bruntál	Dukelská 1501/2, Bruntál, Bruntál,CZ	ROOFTOP	street_address
+69007:3	48.75127699999999	16.8952671	Mládežnická Gumotex, Břeclav	Mládežnická Gumotex, Břeclav,CZ	ROOFTOP	establishment,point_of_interest
+69007:6	48.7603926	16.886564	sídl.Dukelských hrdinů, Břeclav	sídl.Dukelských hrdinů, Břeclav,CZ	GEOMETRIC_CENTER	route
+69007:7	48.7627491	16.8833852	Kupkova - Nár.hrdinů roh, Břeclav	Kupkova - Nár.hrdinů roh, Břeclav,CZ	GEOMETRIC_CENTER	intersection
+69007:16	48.775246	16.8932226	Lidická, Břeclav	Lidická, Břeclav,CZ	GEOMETRIC_CENTER	route
+35007:7	50.0679301	12.3660642	Cheb, Pastýřská, Cheb	Cheb, Pastýřská, Cheb,CZ	GEOMETRIC_CENTER	route
+35007:156	50.1875095	12.6389997	Smetanova, Sokolov	Smetanova, Sokolov,CZ	GEOMETRIC_CENTER	route
+35007:158	50.1803221	12.6446636	náměstí Budovatelů, Sokolov	náměstí Budovatelů, Sokolov,CZ	GEOMETRIC_CENTER	route
+35007:161	50.1723584	12.6624475	Seifertova, Sokolov	Seifertova, Sokolov,CZ	GEOMETRIC_CENTER	route
+35007:163	50.174118	12.6720241	Alšova, Sokolov	Alšova, Sokolov,CZ	GEOMETRIC_CENTER	route
+35007:164	50.1729677	12.6692243	Švabinského, Sokolov	Švabinského, Sokolov,CZ	GEOMETRIC_CENTER	route
+35007:166	50.1753912	12.6603688	Sokolovská, Sokolov	Sokolovská, Sokolov,CZ	GEOMETRIC_CENTER	route
+35007:167	50.173576	12.6551989	Slovenská, Sokolov	Slovenská, Sokolov,CZ	GEOMETRIC_CENTER	route
+35007:173	50.1823768	12.6491354	prodejna BILLA, Sokolov	prodejna BILLA, Sokolov,CZ	ROOFTOP	establishment,food,grocery_or_supermarket,point_of_interest,store,supermarket
+35007:174	50.1742605	12.6515604	prodejna PENNY, Sokolov	prodejna PENNY, Sokolov,CZ	ROOFTOP	establishment,food,grocery_or_supermarket,point_of_interest,store,supermarket
+35007:175	50.181919	12.640505	Růžové náměstí, OD Výběr, Sokolov	Růžové náměstí, OD Výběr, Sokolov,CZ	ROOFTOP	establishment,hardware_store,point_of_interest,store
+79007:10	50.2268959	17.2029239	Dukelská 717/2, Albert, Jeseník	Dukelská 717/2, Albert, Jeseník,CZ	ROOFTOP	street_address
+36207:1	50.228452	12.8544312	Západní 1807/43, Karlovy Vary	Západní 1807/43, Karlovy Vary,CZ	ROOFTOP	street_address
+36207:24	50.2214724	12.8893525	Na Vyhlídce 75,, Karlovy Vary	Na Vyhlídce 75,, Karlovy Vary,CZ	RANGE_INTERPOLATED	street_address
+27207:1	50.1456501	14.0987546	ulice T.G. Masaryka, Kladno	ulice T.G. Masaryka, Kladno,CZ	GEOMETRIC_CENTER	route
+27207:2	50.143387	14.0888394	Tř. ČSA, Kladno	Tř. ČSA, Kladno,CZ	GEOMETRIC_CENTER	establishment,point_of_interest
+27207:9	50.1384114	14.0895075	Fr. Kloze, Domov důchodců, Kladno	Fr. Kloze, Domov důchodců, Kladno,CZ	ROOFTOP	establishment,health,point_of_interest
+27207:10	50.1429155	14.0920439	Nemocnice Kladno, Kladno	Nemocnice Kladno, Kladno,CZ	GEOMETRIC_CENTER	route
+27207:11	50.1416042	14.0925231	škola na Amálce, Kladno	škola na Amálce, Kladno,CZ	ROOFTOP	establishment,point_of_interest,school
+27207:12	50.1414653	14.0982004	restaurace u Dvořáků, Kladno	restaurace u Dvořáků, Kladno,CZ	ROOFTOP	establishment,food,point_of_interest,restaurant
+27207:14	50.1458972	14.1063137	nádraží ČSD, Kladno	nádraží ČSD, Kladno,CZ	ROOFTOP	bus_station,establishment,point_of_interest,transit_station
+27207:15	50.13066689999999	14.1105182	restarace na Kovárně, Kladno	restarace na Kovárně, Kladno,CZ	GEOMETRIC_CENTER	establishment,food,point_of_interest,restaurant
+27207:16	50.1369749	14.1020787	Sítná, hotel Kladno, Kladno	Sítná, hotel Kladno, Kladno,CZ	ROOFTOP	establishment,food,lodging,point_of_interest,restaurant
+27207:17	50.1420351	14.106594	ulice J. Hory, Kladno	ulice J. Hory, Kladno,CZ	GEOMETRIC_CENTER	route
+27207:20	50.1311561	14.1166451	Kaufland, Kladno	Kaufland, Kladno,CZ	ROOFTOP	establishment,food,grocery_or_supermarket,point_of_interest,store,supermarket
+76707:7	49.2963687	17.3968186	Husovo nám., Kroměříž, Kroměříž	Husovo nám., Kroměříž, Kroměříž,CZ	GEOMETRIC_CENTER	route
+27607:1	50.3469232	14.4857433	Pražská, nemocnice, Mělník	Pražská, nemocnice, Mělník,CZ	ROOFTOP	establishment,health,hospital,point_of_interest
+27607:4	50.34866599999999	14.490762	Mladoboleslavská- motot., Mělník	Mladoboleslavská- motot., Mělník,CZ	ROOFTOP	car_dealer,car_repair,establishment,point_of_interest,store
+74207:5	49.5968188	18.0185254	Nový Jičín, Riegrova 1945/9, Nový Jičín	Nový Jičín, Riegrova 1945/9, Nový Jičín,CZ	ROOFTOP	street_address
+74207:6	49.6000128	18.0217286	Nový Jičín, Hřbitovní 1522/26, potraviny, Nový Jičín	Nový Jičín, Hřbitovní 1522/26, potraviny, Nový Jičín,CZ	ROOFTOP	establishment,food,grocery_or_supermarket,point_of_interest,store
+74207:14	49.5927865	17.9976638	Nový Jičín, Sportovní 1398/8, potraviny, Nový Jičín	Nový Jičín, Sportovní 1398/8, potraviny, Nový Jičín,CZ	ROOFTOP	establishment,food,grocery_or_supermarket,point_of_interest,store
+74207:16	49.5972468	18.0034763	Nový Jičín, Vančurova 702/38, Nový Jičín	Nový Jičín, Vančurova 702/38, Nový Jičín,CZ	ROOFTOP	street_address
+77072:33	49.5851532	17.2449918	Olomouc, Varšavské nám. 1120/8, Olomouc	Olomouc, Varšavské nám. 1120/8, Olomouc,CZ	ROOFTOP	street_address
+79907:1	49.470735	17.1257217	Winklerova 2258/25, Prostějov	Winklerova 2258/25, Prostějov,CZ	ROOFTOP	street_address
+79907:7	49.4800074	17.1162106	sídliště E.Beneše 3916/21, Prostějov	sídliště E.Beneše 3916/21, Prostějov,CZ	ROOFTOP	street_address
+79907:9	49.4740601	17.1133646	Vápenice 2955/23, Prostějov	Vápenice 2955/23, Prostějov,CZ	ROOFTOP	street_address
+79907:11	49.4805928	17.108025	Pod Kosířem 3194/48, Prostějov	Pod Kosířem 3194/48, Prostějov,CZ	ROOFTOP	street_address
+79907:20	49.4721931	17.0959815	sídl.Svobody 3574/75,restaurace Haná, Prostějov	sídl.Svobody 3574/75,restaurace Haná, Prostějov,CZ	GEOMETRIC_CENTER	establishment,food,point_of_interest,restaurant
+79907:21	49.4685111	17.0943966	sídl.Svobody 3509/1, Prostějov	sídl.Svobody 3509/1, Prostějov,CZ	ROOFTOP	street_address
+78807:1	49.9625545	16.9758762	M.R.Štefánika 1213/22, Šumperk	M.R.Štefánika 1213/22, Šumperk,CZ	ROOFTOP	street_address
+78807:3	49.955295	16.9765056	Žerotínova 1833/56, Pars, Šumperk	Žerotínova 1833/56, Pars, Šumperk,CZ	ROOFTOP	establishment,point_of_interest
+78807:7	49.9635061	16.9773326	Masarykovo nám. 1170/3, Kino Oko, Šumperk	Masarykovo nám. 1170/3, Kino Oko, Šumperk,CZ	ROOFTOP	electronics_store,establishment,home_goods_store,movie_theater,point_of_interest,store
+78807:8	49.960702	16.9725267	Nemocniční 265/7, pož.zbrojnice, Šumperk	Nemocniční 265/7, pož.zbrojnice, Šumperk,CZ	ROOFTOP	establishment,fire_station,point_of_interest
+78807:9	49.95912999999999	16.9642034	Nerudova 640/41, nemocnice vrátnice, Šumperk	Nerudova 640/41, nemocnice vrátnice, Šumperk,CZ	ROOFTOP	establishment,hospital,point_of_interest
+78807:10	49.9744839	16.9565648	Temenická 2782/91, pošta Šumperk 4, Šumperk	Temenická 2782/91, pošta Šumperk 4, Šumperk,CZ	ROOFTOP	establishment,finance,point_of_interest,post_office
+78807:11	49.9714953	16.9917395	Čsl. armády 2324/28, potraviny, Šumperk	Čsl. armády 2324/28, potraviny, Šumperk,CZ	ROOFTOP	bakery,establishment,food,point_of_interest,store
+78807:12	49.96865039999999	16.9868993	Chodská 1373/2, Šumperk	Chodská 1373/2, Šumperk,CZ	ROOFTOP	street_address
+78807:13	49.97142299999999	16.983496	B. Václavka 1427/26, Šumperk	B. Václavka 1427/26, Šumperk,CZ	ROOFTOP	street_address
+78807:14	49.967814	16.9759549	Kozinova 30/15, Šumperk	Kozinova 30/15, Šumperk,CZ	ROOFTOP	street_address
+78807:15	49.9841047	16.9405574	Bohdíkovská 2198/54, Šumperk	Bohdíkovská 2198/54, Šumperk,CZ	ROOFTOP	street_address
+78807:17	49.96926939999999	16.9638847	Temenická 2532/33, Šumperk	Temenická 2532/33, Šumperk,CZ	ROOFTOP	street_address
+78807:18	49.9737694	16.9732439	J. z Poděbrad 704/75, Šumperk	J. z Poděbrad 704/75, Šumperk,CZ	ROOFTOP	street_address
+78807:22	49.9659208	16.9776936	Revoluční 1732/25, potraviny, Šumperk	Revoluční 1732/25, potraviny, Šumperk,CZ	ROOFTOP	establishment,food,grocery_or_supermarket,point_of_interest,store,supermarket
+78807:23	49.9652172	16.9916692	Jesenická 1819/61, pošta Šumperk 3, Šumperk	Jesenická 1819/61, pošta Šumperk 3, Šumperk,CZ	ROOFTOP	establishment,finance,point_of_interest,post_office
+78807:24	49.9655593	16.9886998	Jeremenkova 1569/15, Šumperk	Jeremenkova 1569/15, Šumperk,CZ	ROOFTOP	street_address
+78807:26	49.9740336	16.975251	Hlavní třída 3061/20, u parku, Šumperk	Hlavní třída 3061/20, u parku, Šumperk,CZ	ROOFTOP	establishment,point_of_interest,shopping_mall
+34707:1	49.800574	12.6300061	1.máje, Tachov	1.máje, Tachov,CZ	GEOMETRIC_CENTER	route
+34707:2	49.7989744	12.6281217	Hornická, Tachov	Hornická, Tachov,CZ	GEOMETRIC_CENTER	route
+34707:5	49.7952376	12.6328052	Nám.Republiky, Tachov	Nám.Republiky, Tachov,CZ	GEOMETRIC_CENTER	route
+34707:7	49.7915358	12.6258725	Hálkova, Tachov	Hálkova, Tachov,CZ	GEOMETRIC_CENTER	route
+34707:8	49.79351	12.6313317	Zahradní, Tachov	Zahradní, Tachov,CZ	GEOMETRIC_CENTER	route
+34707:9	49.79141569999999	12.6409058	Žižkova, Tachov	Žižkova, Tachov,CZ	GEOMETRIC_CENTER	route
+34707:10	49.795571	12.633696	Závěrečná, Tachov	Závěrečná, Tachov,CZ	ROOFTOP	establishment,point_of_interest
+34707:11	49.7994886	12.6413823	Stadtrodská, Tachov	Stadtrodská, Tachov,CZ	GEOMETRIC_CENTER	route
+34707:12	49.8006273	12.6474412	U Penzionu, Tachov	U Penzionu, Tachov,CZ	GEOMETRIC_CENTER	route
+34707:13	49.8064105	12.6443654	Bělojarská, policie, Tachov	Bělojarská, policie, Tachov,CZ	GEOMETRIC_CENTER	establishment,point_of_interest,police
+34707:14	49.8084944	12.6467573	Plánská, Tachov	Plánská, Tachov,CZ	GEOMETRIC_CENTER	route
+34707:15	49.8018994	12.6351981	T.G.Masaryka. Delta, Tachov	T.G.Masaryka. Delta, Tachov,CZ	ROOFTOP	establishment,point_of_interest
+34707:40	49.79703259999999	12.6361989	Panenská, domov důchodců, Tachov	Panenská, domov důchodců, Tachov,CZ	ROOFTOP	establishment,health,point_of_interest
+40371:189	50.6360572	13.8285985	Dr.Vrbenského, Teplice	Dr.Vrbenského, Teplice,CZ	GEOMETRIC_CENTER	route
+40371:191	50.6341253	13.846769	Pražská, Teplice	Pražská, Teplice,CZ	GEOMETRIC_CENTER	route
+40371:217	50.64030229999999	13.843445	Josefa Suka 1346/3, Teplice	Josefa Suka 1346/3, Teplice,CZ	ROOFTOP	street_address
+75707:4	49.3451537	17.9814641	Vsetín, Jiráskova, Vsetín	Vsetín, Jiráskova, Vsetín,CZ	GEOMETRIC_CENTER	route
+75707:5	49.3397927	17.9814436	Na Hrázi 1603, Vsetín	Na Hrázi 1603, Vsetín,CZ	ROOFTOP	street_address
+75707:8	49.34309289999999	17.9930545	Hrbová, obchod, Vsetín, Vsetín	Hrbová, obchod, Vsetín, Vsetín,CZ	ROOFTOP	establishment,point_of_interest,store
+75707:12	49.33706249999999	17.9946953	Hotel VSACAN, Vsetín, Vsetín	Hotel VSACAN, Vsetín, Vsetín,CZ	ROOFTOP	establishment,lodging,point_of_interest
+66907:31	48.8407825	16.0657739	Holanská, obchod, Znojmo, Znojmo	Holanská, obchod, Znojmo, Znojmo,CZ	ROOFTOP	establishment,health,pharmacy,point_of_interest,store
+66907:52	48.8693088	16.0492409	Hradiště,Jednota obchod, Znojmo	Hradiště,Jednota obchod, Znojmo,CZ	ROOFTOP	establishment,food,grocery_or_supermarket,point_of_interest,store
+43807:143	50.35905529999999	13.7842954	Kpt. Nálepky č.p. 2097, Louny, Louny	Kpt. Nálepky č.p. 2097, Louny, Louny,CZ	ROOFTOP	street_address
+51300:11	50.6003494	15.3290385	Na Olešce č.p.437, Semily	Na Olešce č.p.437, Semily,CZ	ROOFTOP	street_address
+51300:31	50.6135756	15.3579929	ul. Nouzov, č.p.179, Semily	ul. Nouzov, č.p.179, Semily,CZ	ROOFTOP	street_address
+51300:34	50.6058641	15.3348591	ulice Nad Špejcharem č.p.574, Semily	ulice Nad Špejcharem č.p.574, Semily,CZ	ROOFTOP	street_address
+
+69007:2	48.7512451	16.9027927	Lanžhotská křižovatka, Břeclav	Lanžhotská, Břeclav,CZ	GEOMETRIC_CENTER	route
+69007:15	48.775246	16.8932226	Lidická TPH, Břeclav	Lidická, Břeclav,CZ	GEOMETRIC_CENTER	route
+35007:2	50.0723849	12.3841759	Cheb, ČD železniční stanice, Cheb	Cheb, železniční stanice, Cheb,CZ	GEOMETRIC_CENTER	route
+35007:172	50.1766121	12.6754609	obchodní dům Kaufland (dočasně sejmuta 17, Sokolov	obchodní dům Kaufland, Sokolov,CZ	ROOFTOP	establishment,food,grocery_or_supermarket,point_of_interest,store,supermarket
+79007:12	50.2266591	17.2068454	vedle Sadové 1364/3,autobus.nádraží, Jeseník	Sadová 1364/3, Jeseník,CZ	ROOFTOP	street_address
+74207:3	49.5927904	18.0170076	Nový Jičín, Dvořákova 859/21 - křižovatka, Nový Jičín	Dvořákova 859/21, Nový Jičín,CZ	ROOFTOP	street_address
+74207:18	49.5988607	18.0032877	Nový Jičín, Anenská 727/23 - křižovatka, Nový Jičín	Anenská 727/23, Nový Jičín,CZ	ROOFTOP	street_address
+77072:27	49.59032879999999	17.2513652	Olomouc,tř.Svobody 686/26,tržnice zast.MHD, Olomouc	Olomouc,tř.Svobody 686/26,Olomouc,CZ	ROOFTOP	street_address
+79907:2	49.4729464	17.1188157	Svatoplukova 2598/15,křižovatka, Prostějov	Svatoplukova 2598/15, Prostějov,CZ	ROOFTOP	street_address
+78807:2	49.9600181	16.984989	Čičákova 985/1,křižov, Šumperk	Čičákova 985/1, Šumperk,CZ	ROOFTOP	street_address
+78807:4	49.9627028	16.964886	Zábřežská 1815/19,u MHD-samoobsl., Šumperk	Zábřežská 1815/19,samoobsluha, Šumperk,CZ	ROOFTOP	establishment,food,grocery_or_supermarket,point_of_interest,store
+78807:21	49.9706202	16.9752997	Gen.Svobody - Žižkova 2840/1, Šumperk	Žižkova 2840/1, Šumperk,CZ	ROOFTOP	street_address
+78807:25	49.9617556	16.9816538	Šumperk,Jesenická 464/4,pošta Šu 2,u nádraží, Šumperk	,Jesenická 464/4,pošta, Šumperk,CZ	ROOFTOP	establishment,finance,point_of_interest,post_office
+34707:4	49.7991801	12.6223417	P.Velikého - dočasně sejmuta, Tachov	P.Velikého, Tachov,CZ	GEOMETRIC_CENTER	route
+75707:31	50.6553396	15.6022293	Hošťálková, Vsetín	Řeky č.p. 567, Semily,CZ	GEOMETRIC_CENTER	route
+27207:18	50.1418744	14.1112168	Štěpánská 2670, Kladno	Štěpánská 2670, Kladno,CZ	ROOFTOP	street_address
+27207:26	50.1442304	14.1108628	ul. gen. Klapálka, Kladno	ul. gen. Klapálka, Kladno,CZ	GEOMETRIC_CENTER	route
+27207:27	50.1567225	14.1284259	Poldi, Dubí, Kladno	Poldi, Dubí, Kladno,CZ	ROOFTOP	establishment,point_of_interest
+27207:28	50.151515	14.1169545	Poldi, Kladno	Poldi, Kladno,CZ	ROOFTOP	establishment,point_of_interest
+27607:3	50.3428552	14.4954419	Italská , Mělník	Italská , Mělník,CZ	GEOMETRIC_CENTER	route
+79907:8	49.4775977	17.1160336	Olomoucká 2903/37, Prostějov	Olomoucká 2903/37, Prostějov,CZ	ROOFTOP	street_address
+34707:3	49.797636	12.6342199	poliklinika, Tachov	poliklinika, Tachov,CZ	ROOFTOP	establishment,health,point_of_interest
+34707:6	49.79228120000001	12.6243455	Americká, Tachov	Americká, Tachov,CZ	GEOMETRIC_CENTER	route
+75707:15	49.33544389999999	17.9957783	Nádraží, Vsetín	Nádraží, Vsetín,CZ	ROOFTOP	establishment,point_of_interest
+75707:16	49.3859051	18.0182958	Dušná, Vsetín	Dušná, Vsetín,CZ	ROOFTOP	establishment,point_of_interest
