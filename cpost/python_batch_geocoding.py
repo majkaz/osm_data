@@ -19,6 +19,7 @@ import pandas as pd
 import requests
 import logging
 import time
+import sys
 
 logger = logging.getLogger("root")
 logger.setLevel(logging.DEBUG)
@@ -41,9 +42,18 @@ BACKOFF_TIME = 30
 # Set your output file name here.
 output_filename = 'out.csv'
 # Set your input file here
-input_filename = "cpost_NoCoord_Geocode_sorted.csv"
+program_name = sys.argv[0]
+arguments = sys.argv[1:]
+
+if (len(arguments) != 2):
+    print("Usage: %s IN_CSV_FILE OUT_CSV_FILE" % (program_name))
+    exit(1)
+
+input_filename = arguments[0]
+output_filename = arguments[1]
+#input_filename = "cpost_NoCoord_Geocode_sorted.csv"
 # Specify the column name in your input data that contains addresses here
-address_column_name = "Address"
+address_column_name = "address"
 # Return Full Google Results? If True, full JSON results from Google are included in output
 RETURN_FULL_RESULTS = False
 

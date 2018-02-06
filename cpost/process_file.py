@@ -163,7 +163,7 @@ print('Boxes: %d' % (len(boxes)))
 # Prepare inserts into database
 print("Generating sql")
 try:
-    with open('inserts.sql', encoding='utf-8', mode='w+') as sqlfile:
+    with open('inserts.csv', encoding='utf-8', mode='w+') as sqlfile:
         for k in boxes:
             box = boxes[k]
             data = {}
@@ -202,7 +202,7 @@ try:
             else:
                 data['collection_times'] = 'null'
 
-            sqlfile.write("'%s', %s, %s, %s, %s, %s, %s, '%s', '%s', '%s', '%s', '%s', '%s', 201801\n" %
+            sqlfile.write("'%s'\t%s\t%s\t%s\t%s\t%s\t%s\t'%s'\t'%s'\t'%s'\t'%s'\t'%s'\t'%s'\t201801\n" %
             (data['ref'], data['psc'], data['id'], data['x'], data['y'], data['lat'], data['lon'], data['address'], data['place'], data['suburb'], data['village'], data['district'], data['collection_times']))
 
 except Exception as error:
