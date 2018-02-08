@@ -163,7 +163,7 @@ print('Boxes: %d' % (len(boxes)))
 # Prepare inserts into database
 print("Generating sql")
 try:
-    with open('inserts.csv', encoding='utf-8', mode='w+') as sqlfile:
+    with open('OUT.csv', encoding='utf-8', mode='w+') as sqlfile:
         for k in boxes:
             box = boxes[k]
             data = {}
